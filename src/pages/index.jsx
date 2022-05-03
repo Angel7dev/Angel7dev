@@ -1,6 +1,6 @@
 import Onepage from '../components/onepage'
-import { getExpAction } from '../redux/actions/portfolio'
-import { useDispatch, useSelector } from 'react-redux'
+import { getExpAction, getProjectsAction, getSkillsAction } from '../redux/actions/portfolio'
+import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 
 
@@ -9,6 +9,8 @@ function Home() {
 
   useEffect(()=>{
     dispatch(getExpAction())
+    dispatch(getProjectsAction())
+    dispatch(getSkillsAction())
   })
 
   return <Onepage/>

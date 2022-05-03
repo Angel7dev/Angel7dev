@@ -1,27 +1,16 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react'
-import axios from 'axios'
+import { lazy, Suspense } from 'react'
+
+import { useSelector } from 'react-redux'
 
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
-// https://github.com/maxmarinich/react-alice-carousel/tree/v1
+import Image from 'next/image'
 
-
-// import Card from './Card'
 const Card = lazy(() => import('./Card'))
+
 const Skills = () => {
-    const [skills, setSkills] = useState([])
-    const getSkills = async () => {
-        const resp = await axios.get(`https://ragandroll.herokuapp.com/SkillsView`)
-        setSkills(resp.data)
-    }
-
+    const skills = useSelector(e => e.portfolio.Skills)
     const handleOnDragStart = (e) => e.preventDefault()
-
-    useEffect(() => {
-        getSkills()
-        console.log(skills[0])
-    }, [])
-
 
     return (
         <div id="skills" className='mb-12'>
@@ -34,15 +23,15 @@ const Skills = () => {
                 </div>
             </div>
 
-            <AliceCarousel 
-            mouseTrackingEnabled
-            infinite={true}
-            playButtonEnabled={true}
-            dotsDisabled={true}
-            buttonsDisabled={true}
+            <AliceCarousel
+                mouseTrackingEnabled
+                infinite={true}
+                playButtonEnabled={true}
+                dotsDisabled={true}
+                buttonsDisabled={true}
             >
 
-                {skills && skills.map((i) =>
+                {skills.length ? skills.map((i) =>
                     <Suspense key={i.id} fallback={
                         <svg className="animate-spin h-20 w-20 mx-auto my-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -53,12 +42,16 @@ const Skills = () => {
                         {
                             //  <img src={i.image}  className="yours-custom-class" />
                             <>
-                            <Card i={i} onDragStart={handleOnDragStart} />
-                            <img src="" alt="" />
+                                <Card i={i} onDragStart={handleOnDragStart} />
                             </>
                         }
                     </Suspense>
-                )}
+                ) :
+                    <svg className="animate-spin h-20 w-20 mx-auto my-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                }
 
             </AliceCarousel >
 
