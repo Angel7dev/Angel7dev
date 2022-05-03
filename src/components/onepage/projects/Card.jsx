@@ -17,7 +17,7 @@ const Card = ({ i, num }) => {
 
 
         >
-            <a href={i.live} target="_blank" className="w-full lg:w-2/4  flex overflow-hidden ">
+            <a href={i.live} rel="noreferrer" target="_blank" className="w-full lg:w-2/4  flex overflow-hidden ">
                 <div className="h-full  border-2">
                     <img className="w-full h-full object-center object-cover shadow " src={i.image}
                         alt={i.name} />

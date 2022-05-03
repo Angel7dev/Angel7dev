@@ -4,15 +4,14 @@ const Card = lazy(() => import('./Card'))
 
 import { useSelector } from 'react-redux'
 
-
-export default () => {
+const Projects = () => {
     const projects = useSelector(e => e.portfolio.Projects)
 
     return (
         <div className="mx-auto" id="projects">
-            <div className="container flex justify-center mx-auto  mt-32">
-                <div className="my-8">
-                    <h1 className="text-gray-50 text-7xl text-center pb-3">Projects</h1>
+          <div className="container flex justify-center mx-auto mt-32" >
+                <div className="my-12">
+                    <h1 className="text-gray-50 text-5xl text-center pb-3">My Projects:</h1>
                     <p className="xl:text-3xl text-2xl text-center text-gray-300 pb-6 sm:w-4/6 w-5/6 mx-auto">
                     </p>
                 </div>
@@ -54,3 +53,5 @@ export default () => {
     )
 }
 
+
+export default Projects

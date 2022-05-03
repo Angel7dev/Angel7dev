@@ -1,7 +1,7 @@
 
 const backend_api = process.env.BACKEND_DJANGO_API
 
-export default async function (req, res) {
+export default async function exp(req, res) {
     if (req.method === 'GET') {
         const resp = await fetch(`${backend_api}/ExpViews/`, {
             method: 'GET',

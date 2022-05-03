@@ -21,7 +21,7 @@ const Index = () => {
       </div>
 
       <div className="mx-10 md:mx-36 my-16" id="exp">
-        <ol class="relative border-l-4 border-gray-200 px-4 mx-2">
+        <ol className="relative border-l-4 border-gray-200 px-4 mx-2">
 
           {exp.length > 0 ?  exp.map((i) =>
             <Suspense key={i.id} fallback={

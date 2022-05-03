@@ -1,7 +1,7 @@
 
 const backend_api = process.env.BACKEND_DJANGO_API
 
-export default async function (req, res) {
+export default async function skills(req, res) {
 
     
     if (req.method === 'GET') {
