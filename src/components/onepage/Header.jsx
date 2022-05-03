@@ -13,7 +13,7 @@ const Header = () => {
             lg:flex-row md:mx-16 lg:mx-24 ">
 
                 <div className="flex justify-start items-start md:mx-4 ">
-                    <div className='md:w-[15rem]'>
+                    <div className='lg:w-[15rem]'>
                         <Image src="/images/Angel_Riera.jpg" alt="perfil.svg" width={250} height={400}
                             className="object-cover rounded-lg overflow-hidden"
                             fill="none" stroke="currentColor" />

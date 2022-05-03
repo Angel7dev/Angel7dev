@@ -1,9 +1,7 @@
-import React from 'react'
 import Header from './Header'
-// import Contact from './onepage/Contact'
-import Footer from '../Footer';
-import Navbar from '../Navbar';
-import { Layout } from '../Layout';
+import Layout from '../Layout';
+import Contact from './Contact';
+import Exp from './exp';
 
 // import AddExpForm from './onepage/AddExpForm'
 
@@ -14,7 +12,7 @@ const Home = () => {
       <Header/>
       <div className="container flex flex-col mx-auto m-2 md:m-auto">
 
-        {/* <Exp /> */}
+        <Exp />
 
         <div className="mx-36">
           <hr />
@@ -27,7 +25,7 @@ const Home = () => {
 
         {/* <Knows/> */}
       </div>
-      {/* <Contact /> */}
+      <Contact />
       
     </Layout>
   )

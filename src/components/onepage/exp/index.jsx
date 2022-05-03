@@ -1,5 +1,4 @@
 import React, { useEffect, useState, lazy, Suspense } from 'react'
-import axios from 'axios'
 
 // import Exp from './Exp'
 const Exp = lazy(() => import('./Item'))
@@ -9,16 +8,22 @@ const Index = () => {
 
   const [exp, setExp] = useState(null)
   const getExp = async () => {
-    const resp = await axios.get(`https://ragandroll.herokuapp.com/ExpViews`)
+    const resp = await fetch(`https://ragandroll.herokuapp.com/ExpViews`,{
+      method: 'GET',
+      headers:{
+        'Content-Type': 'application/json'
+      }
+    })
+    
     // const resp = await axios.get(`http://127.0.0.1:8000/ExpViews`)
-    setExp(resp.data)
+    const data = await resp.json()
+    setExp(data.data)
   }
 
   useEffect(() => {
     getExp()
 
   }, [])
-
   return (
     <>
 
