@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+
+.App-logo {
+    pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+    animation: App-logo-spin infinite 10s linear;
+}
+
+}
+@keyframes App-logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+.btn{
+    @apply block w-1/2
+}
+  
+.nav-btn{
+    @apply hover:bg-sky-700 border border-sky-400 rounded-md 
+    bg-gradient-to-bl  hover:bg-gradient-to-b active:bg-gradient-to-l
+    from-sky-500 to-blue-900
+    sm:inline-block block px-3 py-1
+}
+
+.navbar {
+    @apply w-full text-center font-medium
+    pt-4 sm:p-0 flex-grow hidden text-sm sm:flex justify-center items-center space-y-2 
+    sm:space-y-0 sm:space-x-10
+}
+
+
+
+.navbar2 {
+    @apply w-full text-center font-medium 
+    flex-grow sm:flex sm:justify-center items-center
+}
+
+.nav-btn2{
+    @apply block text-2xl my-0  hover:bg-blue-300 hover:text-sky-900 py-4 w-full
+}
+
