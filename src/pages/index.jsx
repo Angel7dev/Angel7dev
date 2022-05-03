@@ -1,5 +1,5 @@
-import Home from '../components/Home'
+import Onepage from '../components/onepage'
 
 export default function () {
-  return <Home/>
+  return <Onepage/>
 }

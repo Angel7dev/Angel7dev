@@ -1,16 +1,16 @@
 import React from 'react'
-import Header from './onepage/Header'
+import Header from './Header'
 // import Contact from './onepage/Contact'
-import Footer from './Footer';
-import Navbar from './Navbar';
+import Footer from '../Footer';
+import Navbar from '../Navbar';
+import { Layout } from '../Layout';
 
 // import AddExpForm from './onepage/AddExpForm'
 
 
 const Home = () => {
   return (
-    <div className='h-full'>
-      <Navbar />
+    <Layout className='h-full'>
       <Header/>
       <div className="container flex flex-col mx-auto m-2 md:m-auto">
 
@@ -27,10 +27,9 @@ const Home = () => {
 
         {/* <Knows/> */}
       </div>
-
       {/* <Contact /> */}
-      <Footer />
-    </div>
+      
+    </Layout>
   )
 }
 

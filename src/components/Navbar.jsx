@@ -1,9 +1,5 @@
 import React from 'react'
-// import {
-//     NavLink,
-//     Link,
-// } from 'react-router-dom'
-
+import Image from 'next/image'
 const Navbar = () => {
 
     const display = () => {
@@ -11,11 +7,9 @@ const Navbar = () => {
         navmenu.classList.toggle("hidden")
     }
     return (
-        <>
             <div className="absolute z-20">
                 <nav className="w-full fixed top-0 left-0 right-0 flex sm:block justify-center        
                 bg-gradient-to-t from-blue-600 to-sky-700">
-
                     {/* hidden buttom */}
                     <div className="flex mt-4 items-start sm:hidden">
                         <button onClick={() => display()} className="flex items-center px-3 py-2 
@@ -31,25 +25,19 @@ const Navbar = () => {
                     <div className='flex flex-col sm:flex-row justify-center items-center sm:pb-0 pb-4 '>
                         <div className='mx-8 w-full sm:w-1/5 ml-8 text-center font-bold text-xl'>
                             <a href="#about">
-                                <div className='w-full'>
-                                    Angel Riera
-                                </div>
-                                <div className='w-full flex justify-center items-center lx:space-x-2'>
-                                    <img className='App-logo' src="RagAndRoll/logo192.png" alt="" width={30} height={30} />
+                                <div className='w-full'>Angel Riera</div>
+                                <div className='w-full flex justify-center items-center '>
+                                    <Image className='App-logo' src="/images/logo192.png" alt="" width={30} height={30} />
                                     <p>
                                         FullStack
-
                                     </p>
-                                    <img className='fill-' src="RagAndRoll/images/icons/django.svg" alt="" width={30} height={30} />
+                                    <Image className='fill-' src="/images/icons/django.svg" alt="" width={30} height={30} />
 
                                 </div>
                             </a>
                         </div>
 
                         <div className="navbar2 hidden" id='navmenu'>
-
-
-
                             <a href="#exp"
                                 className="nav-btn2">
                                 Experience
@@ -68,7 +56,7 @@ const Navbar = () => {
                                 className="nav-btn2">
                                 Contact
                             </a>
-                            <a href="/RagAndRoll/Cv_Angel_Riera.pdf" target="_blank"
+                            <a href="/Cv_Angel_Riera.pdf" target="_blank"
                                 className="nav-btn2">
                                 ⇩CV
                             </a>
@@ -78,7 +66,6 @@ const Navbar = () => {
                 </nav>
             </div>
 
-        </>
     )
 }
 
