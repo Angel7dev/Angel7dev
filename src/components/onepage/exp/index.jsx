@@ -7,28 +7,13 @@ const Exp = lazy(() => import('./Item'))
 const Index = () => {
 
   const [exp, setExp] = useState(null)
-  const getExp = async () => {
-    const resp = await fetch(`https://ragandroll.herokuapp.com/ExpViews`,{
-      method: 'GET',
-      headers:{
-        'Content-Type': 'application/json'
-      }
-    })
-    
-    // const resp = await axios.get(`http://127.0.0.1:8000/ExpViews`)
-    const data = await resp.json()
-    setExp(data.data)
-  }
 
-  useEffect(() => {
-    getExp()
 
-  }, [])
+
+
+
   return (
     <>
-
-
-
       <div className="container flex justify-center mx-auto  mt-16">
         <div className="my-12">
           <h1 className="text-gray-50 text-5xl text-center pb-3">Experience:</h1>

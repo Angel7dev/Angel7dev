@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux'
-import authReducer from './auth'
-import bookReducer from './wordbook'
+import portfolio from './portfolio'
 
 const reducers = {
-    auth: authReducer,
-    user_book: bookReducer,
+    portfolio: portfolio,
 }
 
 export default combineReducers(reducers)

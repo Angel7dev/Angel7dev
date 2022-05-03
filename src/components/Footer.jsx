@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -25,7 +25,7 @@ const Footer = () => {
                     {/* <!-- twitter --> */}
                     <div className='hover:bg-blue-300 hover:text-sky-900 p-2 rounded-full'>
                         <a href="https://twitter.com/RagnAndRoll" target="__blank">
-                            <img src="/RagAndRoll/images/icons/twitter.svg"
+                            <Image width={25} height={25} src="/images/icons/twitter.svg"
                                 className="h-6 w-6 fill-gray-50"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" alt="" />
                         </a>
@@ -34,7 +34,7 @@ const Footer = () => {
                     {/* <!-- linkedin --> */}
                     <div className='hover:bg-blue-300 hover:text-sky-900 p-2 rounded-full'>
                         <a href="https://www.linkedin.com/in/angelriera/" target="__blank">
-                            <img src="/RagAndRoll/images/icons/linkedin.svg"
+                            <Image width={25} height={25} src="/images/icons/linkedin.svg"
                                 className="h-6 w-6 fill-gray-50"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" alt="" />
                         </a>
@@ -44,7 +44,7 @@ const Footer = () => {
                     {/* <!-- gitHub --> */}
                     <div className='hover:bg-blue-300 hover:text-sky-900 p-2 rounded-full'>
                         <a href="https://github.com/RagAndRoll" target="__blank">
-                            <img src="/RagAndRoll/images/icons/github2.svg"
+                            <Image width={25} height={25} src="/images/icons/github2.svg"
                                 className="h-6 w-6 fill-gray-50"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" alt="" />
                         </a>
