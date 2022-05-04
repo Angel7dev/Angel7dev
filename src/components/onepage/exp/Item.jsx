@@ -10,7 +10,7 @@ const item = ({i}) => {
         <li className="mb-10 ml-4 group">
             <div className="absolute w-5 h-5 bg-gray-200 rounded-full mt-1.5 -left-1 border-2 border-gray-900  group-hover:bg-sky-700"></div>
             <h3 className="text-xl font-semibold ">{i.my_title}</h3>
-            <a href={i.web} target="_blank" className="underline mb-1 text-lg font-normal leading-none ">
+            <a href={i.web} target="_blank"  rel="noreferrer" className="underline mb-1 text-lg font-normal leading-none ">
                 <p>
                 {i.place}
                 </p>
