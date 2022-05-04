@@ -9,14 +9,12 @@ const Card = ({ i, num }) => {
     const [first, setfirst] = useState((num / 2) % 1 === 0)
     console.log(first)
     return (
-        <div className={integer === true 
+        <div className={integer === true
             ?
-            "flex flex-col lg:flex-row mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 px-8"   
-            : 
-            "flex flex-col lg:flex-row-reverse mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 px-8"}
-
-
-        >
+            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8"
+            :
+            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8"}
+>
             <a href={i.live} rel="noreferrer" target="_blank" className="w-full lg:w-2/4  flex overflow-hidden ">
                 <div className="h-full  border-2">
                     <img className="w-full h-full object-center object-cover shadow " src={i.image}
@@ -28,8 +26,7 @@ const Card = ({ i, num }) => {
                     <h3 className="text-xl font-bold text-gray-100 underline-offset-2 underline">
 
                         <span aria-hidden="true" className="text-3xl inset-0">
-
-                        {i.name}
+                            {i.name}
                         </span>
 
 

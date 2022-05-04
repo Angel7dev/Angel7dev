@@ -12,16 +12,14 @@ const Index = () => {
 
   return (
     <>
-      <div className="container flex justify-center mx-auto  mt-16">
-        <div className="my-12">
-          <h1 className="text-gray-50 text-5xl text-center pb-3">Experience:</h1>
-          <p className="xl:text-3xl text-2xl text-center text-gray-300 pb-6 sm:w-4/6 w-5/6 mx-auto">
-          </p>
+      <div className="container flex justify-center md:mx-auto  md:mt-16">
+        <div className="md:my-12 mt-12">
+          <h1 className="text-gray-50 text-5xl text-center ">Experience:</h1>
         </div>
       </div>
 
-      <div className="mx-10 md:mx-36 my-16" id="exp">
-        <ol className="relative border-l-4 border-gray-200 px-4 mx-2">
+      <div className="md:mx-36 my-16" id="exp">
+        <ol className="relative border-l-4 border-gray-200 md:px-4 mx-2">
 
           {exp.length > 0 ?  exp.map((i) =>
             <Suspense key={i.id} fallback={

@@ -26,7 +26,7 @@ const Header = () => {
                 ">
                     <h1 className='font-bold text-5xl'>Angel Riera</h1>
                     <p className="underline underline-offset-8 font-medium text-gray-100 my-2 md:mt-0">
-                        Desarrollador web Full Stack Django React</p>
+                        Full Stack Django React Web Developer</p>
                     <p className="mt-2 md:mt-5 text-lg">
                         I have experience in teamwork with scrum, agile methodologies, and workflow in GitHub, I specialize in developing web apps with Django and React, I also have knowledge in Python, JavaScript, HTML, CSS, tailwind, Bootstrap, Docker, SQL, also in the use of applications, database design, web layout, UX and UI
                     </p>

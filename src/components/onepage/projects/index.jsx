@@ -8,18 +8,14 @@ const Projects = () => {
     const projects = useSelector(e => e.portfolio.Projects)
 
     return (
-        <div className="mx-auto" id="projects">
-          <div className="container flex justify-center mx-auto mt-32" >
-                <div className="my-12">
-                    <h1 className="text-gray-50 text-5xl text-center pb-3">My Projects:</h1>
-                    <p className="xl:text-3xl text-2xl text-center text-gray-300 pb-6 sm:w-4/6 w-5/6 mx-auto">
-                    </p>
-                </div>
+        <div className="md:m-12" id="projects">
+            <div className="md:my-12 mt-12">
+                <h1 className="text-gray-50 text-5xl text-center ">My Projects:</h1>
             </div>
 
-            <div className="max-w-full mb-16">
+            <div className="w-full mb-16">
 
-                <div className="flex flex-col space-y-24">
+                <div className="flex flex-col md:space-y-24">
 
                     {projects.length > 0 ? projects.map((i, index) =>
                         <Suspense key={i.id} fallback={

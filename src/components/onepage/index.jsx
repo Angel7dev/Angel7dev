@@ -13,15 +13,15 @@ const Home = () => {
   return (
     <Layout className='h-full'>
       <Header/>
-      <div className="container flex flex-col mx-auto m-2 md:m-auto">
+      <div className="container flex flex-col  md:m-auto">
 
         <Exp />
 
-        <div className="mx-36">
+        <div className="md:mx-36 mx-4">
           <hr />
         </div>
         <Projects />
-        <div className="mx-36">
+        <div className="md:mx-36 mx-4">
           <hr />
         </div>
         <Skills />
