@@ -7,7 +7,7 @@ const Card = ({ i, num }) => {
     };
     const integer = (num / 2) % 1 === 0
     const [first, setfirst] = useState((num / 2) % 1 === 0)
-    console.log(first)
+
     return (
         <div className={integer === true
             ?
