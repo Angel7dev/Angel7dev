@@ -28,7 +28,7 @@ const Header = () => {
                         - I am passionate about devising solutions of minimum effort and maximum result, self-sustainable and durable over time, for the problems that I face or to improve my social environment following the design principles of permaculture adopted as a philosophy of life.
                         </p>
                         <p>
-                        - I am passionate about this to the point of losing myself in my ideas frequently.
+                        - I am really passionate about this to the point of losing myself in my ideas frequently.
                         </p>
                     </div>
                 </div>
