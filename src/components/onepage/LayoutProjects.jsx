@@ -25,7 +25,10 @@ const items = [
 
 
 const LayoutProjects = () => {
+
     const images = [...Array(5).keys()];
+
+    
     return (
         <div className="mx-[4rem] my-[10rem]">
             <div className="border-b mb-4 mx-[5%]">
@@ -33,7 +36,8 @@ const LayoutProjects = () => {
                     Layout Projects
                 </h3>
             </div>
-            <div class='grid grid-cols-1 ms:grid-cols-2 md:grid-cols-3'>
+            
+            <div class='grid grid-cols-1 ms:grid-cols-2'>
                 {images.map((e, i) => (
                     <div key={i} className='m-2'>
                         <img src={`https://picsum.photos/id/${e}/300/300`} alt={`images${i}`} className='object-cover object-center w-full' />
