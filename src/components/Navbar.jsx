@@ -13,8 +13,13 @@ const Navbar = () => {
                 bg-gradient-to-t from-blue-600 to-sky-700">
 
 
+
                 <div className='flex flex-col sm:flex-row justify-center items-center sm:pb-0 pb-4 '>
+
+   
                     <div className='mx-8 w-full sm:w-1/5 ml-8 text-center font-bold text-xl'>
+
+
                         <a href="#about">
                             <div className='w-full'>Angel Riera</div>
                             <div className='w-full flex justify-center items-center '>
@@ -22,7 +27,7 @@ const Navbar = () => {
                                 <p>
                                     FullStack
                                 </p>
-                                <Image className='fill-' src="/images/icons/django.svg" alt="" width={30} height={30} />
+                                <Image className='fill-teal-500' src="/images/Django.svg" alt="" width={30} height={30} />
 
                             </div>
                         </a>
