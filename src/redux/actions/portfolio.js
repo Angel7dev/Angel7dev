@@ -3,15 +3,13 @@ import * as types from './types'
 export const getExpAction = () => async dispatch => {
 
     try {
-        const resp = await fetch(`/api/get/exp/`, {
+        const resp = await fetch(`/api/localdata/exp/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             }
         })
         const data = await resp.json()
-
-        console.log("status",resp.status)
 
         if(resp.status === 200){
             console.log(data.success)
