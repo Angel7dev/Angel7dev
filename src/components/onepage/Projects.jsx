@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { useSelector } from 'react-redux'
 
 const Projects = () => {
-    const projects = useSelector(e => e.portfolio.Projects)
+
     const displayContent = (e) => {
         return { __html: e }
     };
     // const integer = (num / 2) % 1 === 0
     // const [first, setfirst] = useState((num / 2) % 1 === 0)
+
+    const projects = []
 
     return (
         <div className="md:m-12" id="projects">
@@ -19,7 +19,7 @@ const Projects = () => {
 
                 <div className="flex flex-col md:space-y-24">
 
-                    {projects.length > 0 ? projects.map((i, index) =>
+                    {projects && projects.length > 0 ? projects.map((i, index) =>
                  
                                     <div className={((index / 2) % 1 === 0) === true
                                         ?

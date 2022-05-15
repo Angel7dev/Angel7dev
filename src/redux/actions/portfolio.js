@@ -65,7 +65,7 @@ export const getProjectsAction = () => async dispatch => {
 export const getSkillsAction = () => async dispatch => {
 
     try {
-        const resp = await fetch(`/api/get/skills/`, {
+        const resp = await fetch(`/api/localdata/skills/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
