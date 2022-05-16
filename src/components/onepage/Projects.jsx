@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 
 const Projects = () => {
 
@@ -7,7 +9,7 @@ const Projects = () => {
     // const integer = (num / 2) % 1 === 0
     // const [first, setfirst] = useState((num / 2) % 1 === 0)
 
-    const projects = []
+    const projects = useSelector(e => e.portfolio.Projects)
 
     return (
         <div className="md:m-12" id="projects">

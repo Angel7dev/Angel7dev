@@ -1,113 +1,86 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-"Redux | Next.js | node.js | Postgresql | SQLite | Mongodb | firebase | Heroku | Git | GitHub | GitHub Actions |  | Bootstrap | Bootstrap | Bootstrap | Bootstrap | Bootstrap"
+
+
 
 export default function handler(req, res) {
   res.status(200).json({
     success:
       [
         {
-          "name": "Python",
-          "description": "",
-        },
-        {
-          "name": "JavaScript",
-          "description": "",
-        },
-        {
-          "name": "HTML",
-          "description": "",
-        },
-        {
-          "name": "CSS",
-          "description": "",
-        },
-        {
-          "name": "SASS",
-          "description": "",
-        },
-        {
           "name": "Django",
-          "description": "",
+          "description": "HTTP methods | Testing | User Authentication | Customized user authentication | Administrator management | Database design |  PostgreSQL and SQLite3 databases | Forms | Forms | Template management | Template management ",
         },
         {
           "name": "DRF",
-          "description": "",
-        },
-        {
-          "name": "Rest",
-          "description": "",
+          "description": "rest full api creation | Connecting to React | Frontend user authentication | HTTP methods | Data analysis | Uploading and downloading of files | ",
         },
         {
           "name": "JWT",
-          "description": "",
+          "description": "User Authentication | backend security",
         },
         {
           "name": "Postman",
-          "description": "",
+          "description": "endpoint testing",
         },
         {
           "name": "React",
-          "description": "",
+          "description": "Jsx | React-router-dom | State management; code splitting redux, contex Provider | Axios | shapes | UI Stuff | Get apis or integrate backend",
         },
         {
           "name": "Redux",
-          "description": "",
+          "description": "status management | authentication | react redux integration | redux thunk",
         },
         {
           "name": "Next.js",
-          "description": "",
+          "description": "interface design and layout | SEO optimization | Local API | use redux",
         },
         {
           "name": "Node.js",
-          "description": "",
+          "description": "HTTP methods",
         },
         {
           "name": "WLS2",
-          "description": "",
+          "description": "Creation of environments | Terminal handling | Software installation and updating",
         },      
         {
           "name": "PostgreSQL",
-          "description": "",
+          "description": "Connect with Django | Pgadmin | database design | Database Management | SQL queries",
         },
         {
           "name": "SQLite3",
-          "description": "",
+          "description": "Connect with Django | database design | Database Management | SQL queries",
         },
         {
           "name": "Mongodb",
-          "description": "",
+          "description": "Connect with React and Next ",
         },
         {
-          "name": "firebase",
-          "description": "",
+          "name": "Firebase",
+          "description": "Deploy apps | storage | data base NOSQL" ,
         },
         {
           "name": "Heroku",
-          "description": "",
+          "description": "Deploy apps",
         },
         {
           "name": "Git",
-          "description": "",
+          "description": "branch management | version control | deploy | reset | merge ",
         },
         {
           "name": "GitHub",
-          "description": "",
-        },
-        {
-          "name": "GitHubActions",
-          "description": "",
+          "description": "workflow testing | merge for teamwork | GitHubActions",
         },
         {
           "name": "Docker",
-          "description": "",
+          "description": "Create add delete stop builds | Images | creation and deploy | Docker compose | Devcontainer | Local development environment",
         },
         {
           "name": "TailwindCSS",
-          "description": "",
+          "description": "Layout one pages | create components | figma design | UI-UX design | flex, grid, colors",
         },
         {
           "name": "Bootstrap",
-          "description": "",
+          "description": "Layout one pages | create components |  flex, grid, colors",
         },
 
       ]
