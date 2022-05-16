@@ -11,16 +11,8 @@ export default function handler(req, res) {
           "description": "HTTP methods | Testing | User Authentication | Customized user authentication | Administrator management | Database design |  PostgreSQL and SQLite3 databases | Forms | Forms | Template management | Template management ",
         },
         {
-          "name": "DRF",
-          "description": "rest full api creation | Connecting to React | Frontend user authentication | HTTP methods | Data analysis | Uploading and downloading of files | ",
-        },
-        {
-          "name": "JWT",
-          "description": "User Authentication | backend security",
-        },
-        {
-          "name": "Postman",
-          "description": "endpoint testing",
+          "name": "REST",
+          "description": "Django Rest Framework |rest full api creation | Connecting to React | Frontend user authentication | HTTP methods | Data analysis | Uploading and downloading of files | JWT auth with forntend | Postman endpoint testing",
         },
         {
           "name": "React",
@@ -31,12 +23,8 @@ export default function handler(req, res) {
           "description": "status management | authentication | react redux integration | redux thunk",
         },
         {
-          "name": "Next.js",
-          "description": "interface design and layout | SEO optimization | Local API | use redux",
-        },
-        {
-          "name": "Node.js",
-          "description": "HTTP methods",
+          "name": "Next",
+          "description": "Node.js | interface design and layout | SEO optimization | Local API | use redux",
         },
         {
           "name": "WLS2",
