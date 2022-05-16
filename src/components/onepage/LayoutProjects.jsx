@@ -15,7 +15,7 @@ const LayoutProjects = () => {
                 </h3>
             </div>
 
-            <div class='grid grid-cols-1 md:grid-cols-2'>
+            <div className='grid grid-cols-1 md:grid-cols-2'>
                 {layout.map((e, i) => (
                     <div key={i} className='border border-black group relative w-auto flex h-full items-center justify-center flex-col mx-auto rounded-3xl'>
                         

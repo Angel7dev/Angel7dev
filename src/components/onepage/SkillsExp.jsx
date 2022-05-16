@@ -76,9 +76,9 @@ const SkillsExp = () => {
 
                     <div className='flex items-center justify-center w-full h-full '>
                         <button className='bg-gray-500 mx-2' onClick={() => slider.current.scrollLeft -= 400}>
-                            <svg class='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800' fillRule='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 19l-7-7 7-7'></path></svg>
+                            <svg className='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800' fillRule='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M15 19l-7-7 7-7'></path></svg>
                         </button>
-                        <div ref={slider} class='overflow-hidden scroll-smooth h-full flex items-start justify-start'>
+                        <div ref={slider} className='overflow-hidden scroll-smooth h-full flex items-start justify-start'>
                             {skills.map((e, i) => (
                                 <div key={i} className='snapt-start flex-shrink-0 mx-4 w-full md:w-1/3'>
 
@@ -95,7 +95,7 @@ const SkillsExp = () => {
                             ))}
                         </div>
                         <button className='bg-gray-500 mx-2' onClick={() => slider.current.scrollLeft += 400}>
-                            <svg class='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800' fillRule='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5l7 7-7 7'></path></svg>
+                            <svg className='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800' fillRule='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M9 5l7 7-7 7'></path></svg>
                         </button>
                     </div>
 
