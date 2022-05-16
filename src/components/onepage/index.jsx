@@ -1,10 +1,10 @@
 import Header from './Header'
 import Layout from '../Layout';
 import Contact from './Contact';
-import Exp from './exp';
-import Projects from './projects';
+import Projects from './Projects';
+import LayoutProjects from './LayoutProjects';
+import SkillsExp from './SkillsExp';
 
-import Skills from './skills';
 
 // import AddExpForm from './onepage/AddExpForm'
 
@@ -12,24 +12,16 @@ import Skills from './skills';
 const Home = () => {
   return (
     <Layout className='h-full'>
-      <Header/>
-      <div className="container flex flex-col  md:m-auto">
+      <Header />
 
-        <Exp />
+      <SkillsExp/>
 
-        <div className="md:mx-36 mx-4">
-          <hr />
-        </div>
-        <Projects />
-        <div className="md:mx-36 mx-4">
-          <hr />
-        </div>
-        <Skills />
+      <Projects />
 
-        {/* <Knows/> */}
-      </div>
+      <LayoutProjects/>
+
       <Contact />
-      
+
     </Layout>
   )
 }
