@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useSelector } from "react-redux";
 
 
@@ -25,23 +26,23 @@ const Projects = () => {
 
                     {projects && projects.length > 0 ? projects.map((i, index) =>
 
-                        <div className={((index / 2) % 1 === 0) === true
+                        <div key={index} className={((index / 2) % 1 === 0) === true
                             ?
-                            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8"
+                            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-left"
                             :
-                            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8"}
+                            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-right"}
                         >
-                            <a href={i.live} rel="noreferrer" target="_blank" className="w-full lg:w-2/4  flex overflow-hidden ">
+                            <a href={i.live} rel="noreferrer" target="_blank" className="apsolute w-full lg:w-2/4  flex overflow-hidden ">
                                 <div className="h-full  border-2">
-                                    <img className="w-full h-full object-center object-cover shadow " src={i.image}
+                                    <Image width={"2000%"} height={"1000%"}  className="relative w-full h-full object-center object-cover shadow " src={i.image}
                                         alt={i.name} />
                                 </div>
                             </a>
-                            <div className='w-full lg:w-1/3 flex flex-col justify-center space-y-6 text-center'>
+                            <div className='w-full lg:w-1/3 flex flex-col justify-center space-y-6 '>
                                 <div className="mx-4">
                                     <h3 className="text-xl font-bold text-gray-100 underline-offset-2 underline">
 
-                                        <span aria-hidden="true" className="text-3xl inset-0">
+                                        <span aria-hidden="true" className="text-3xl inset-0 text-center">
                                             {i.name}
                                         </span>
 
