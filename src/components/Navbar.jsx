@@ -36,11 +36,6 @@ const Navbar = () => {
 
 
                     <div className="navbar2 hidden" id='navmenu'>
-                        <a href="#exp"
-                            className="nav-btn2">
-                            Experience
-                        </a>
-
                         <a href="#projects"
                             className="nav-btn2">
                             Projects

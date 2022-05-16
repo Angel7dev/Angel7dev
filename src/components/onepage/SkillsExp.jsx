@@ -33,25 +33,23 @@ const SkillsExp = () => {
 
 
     return (
-        <div className="mb-12 mx-auto md:m-24 text-center">
+        <div id='#skills' className="mb-12 mx-auto lg:m-24 text-center">
             <div className='mb-24'>
 
                 {/* <h3 className="text-[3rem] font-bold mb-10 underline leading-[4rem] mx-4">Experience</h3> */}
                 <div className="mx-6 grid grid-cols-1 md:grid-cols-2 gap-[5rem] text-center">
 
-                    <div className='border rounded-3xl py-16 px-8'>
+                    <div className='border rounded-3xl py-16 px-8 bg-green-400 bg-opacity-20'>
 
-                        <Image width={100} height={100} src={`/images/exp01.jpg`} alt={`exp01`} className='object-cover object-center w-full' />
+                        <h3 className='text-3xl font-bold underline mb-[2rem] mx-10'>teamwork</h3>
                         <p className=''>
                             I have experience in teamwork and collaborations with agile methodologies such as scrum, I tend to be one of the most capable within the groups of dev collaborators, because of my commitment to the work and my wide range of knowledge and preparation.
                         </p>
 
                     </div>
 
-                    <div className='border rounded-3xl pt-12 pb-8 px-8'>
-                        <Image width={100} height={100} src={`/images/exp02.jpg`} alt={`exp02`} className='object-cover object-center w-full' />
-                        <p className='underline'> I also know other sectors such as
-                        </p>
+                    <div className='border rounded-3xl pt-12 pb-8 px-8 bg-blue-400 bg-opacity-20'>
+                        <h3 className='text-3xl font-bold underline mb-[2rem] mx-10'>know other sectors</h3>
                         <ul className='text-center grid grid-cols-2'>
                             {sectors.map((e, i) => (
                                 <li key={i}>{e}</li>
@@ -66,7 +64,12 @@ const SkillsExp = () => {
 
             <div className='mb-24'>
 
-                <h3 className="text-[3rem] font-bold mb-10 underline leading-[4rem] mx-4">Technical skills </h3>
+                <div className="border-b mx-[5%] mb-16">
+                    <h3 className="text-center text-[3rem] font-bold mb-6 underline leading-[4rem] mx-4">
+                        Technical skills
+                    </h3>
+                </div>
+
 
 
                 <div className='my-16'>
