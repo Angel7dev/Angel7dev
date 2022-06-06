@@ -1,4 +1,12 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X0D2W8Z)
+
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=ragandroll&label=Profile%20views&color=0e75b6&style=flat" alt="ragandroll" /> </p>
+
+
+
+
+
+
 <h1 align="center">Hi 👋, I'm Angel Riera</h1>
 <h2 align="center">I am a Full Stack Web Developer Django-React, self-taught learner motivated by problem solving.</h2>
 <h3 align="center">Connect with me:</h3>
