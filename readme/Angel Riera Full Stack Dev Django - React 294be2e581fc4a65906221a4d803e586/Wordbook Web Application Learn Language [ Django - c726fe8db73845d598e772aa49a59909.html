@@ -1,0 +1,671 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Wordbook Web Application Learn Language [ Django - PostgresSQL - DRF - SJWT || React - Next.js - Redux - TailwindCSS ]</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="c726fe8d-b738-45d5-98e7-72aa49a59909" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📘</span></div><h1 class="page-title">Wordbook Web Application Learn Language [ Django - PostgresSQL - DRF - SJWT || React - Next.js - Redux - TailwindCSS ]</h1></header><div class="page-body"><h1 id="1f124529-338a-4989-b4a8-0d3cd2df2f5e" class="block-color-purple_background"><span style="border-bottom:0.05em solid"><strong>View Live</strong></span>: <a href="https://wordbook-ragandroll.vercel.app/">https://wordbook-ragandroll.vercel.app/</a></h1><h1 id="d2cb4cd9-896b-4702-9cf0-087099ff1f0b" class=""><details open=""><summary>🧑‍🏫Description</summary></details></h1><div class="indented"><p id="3b7f3d8a-a2e4-4d9f-a58c-745dc9bfa2f8" class="">Application created to solve the need to control the vocabulary study of a new language </p><ul id="c53bfb53-113d-4b9b-a705-f89214570a68" class="bulleted-list"><li style="list-style-type:disc">saves desired phrases or words in a word book for daily review</li></ul><ul id="4a0000be-9f2a-4e39-b7bc-9d091a703dc2" class="bulleted-list"><li style="list-style-type:disc">creates interactive flashcards with automatically generated audios</li></ul><ul id="3ca1895e-3323-4642-84b1-44ff37176bec" class="bulleted-list"><li style="list-style-type:disc">Learning assessment by writing and listening</li></ul><ul id="e287bcfb-7c44-4837-b11f-737110df0800" class="bulleted-list"><li style="list-style-type:disc">use of spaced repetition algorithm based on errors</li></ul></div><h1 id="9ebd4c60-a190-42bf-842c-076390ec0897" class=""><details open=""><summary>🛠️Stack Technologic</summary></details></h1><div class="indented"><h3 id="de65a92b-1148-4c77-9a30-64f0329c8826" class=""><details open=""><summary>💾<span style="border-bottom:0.05em solid"><strong>backend </strong></span><mark class="highlight-teal"><span style="border-bottom:0.05em solid"><strong>Django</strong></span></mark><span style="border-bottom:0.05em solid"><strong> | GitHub:</strong></span><span style="border-bottom:0.05em solid"><strong><a href="https://github.com/RagAndRoll/word-book-Api">https://github.com/RagAndRoll/word-book-Api</a></strong></span></summary></details></h3><div class="indented"><ul id="e02965ce-bd2f-42f5-9e57-8d728bf7330c" class="bulleted-list"><li style="list-style-type:disc">Django Rest Framework: creation of the Rest Full Api</li></ul><ul id="518f7a48-7c4c-4bbf-8999-e942224a8d38" class="bulleted-list"><li style="list-style-type:disc">Simple JWT: User Authentication Token from the frontend</li></ul><ul id="ebecd04b-0f60-4aaf-a1cf-357f81e09fa4" class="bulleted-list"><li style="list-style-type:disc">PostgreSQL: database connected to the backend</li></ul><ul id="2f73054e-4051-4b53-8395-84cef2720395" class="bulleted-list"><li style="list-style-type:disc">Postman: Endpoint testing with</li></ul><ul id="2664e156-d04b-466d-bbbc-cc0192d347e8" class="bulleted-list"><li style="list-style-type:disc">Deploy Heroku</li></ul></div><h3 id="3c220ac3-c504-4b08-bfd9-60f931b9e76e" class=""><details open=""><summary>🎨<span style="border-bottom:0.05em solid"><strong>Frontend </strong></span><mark class="highlight-blue"><span style="border-bottom:0.05em solid"><strong>React</strong></span></mark><span style="border-bottom:0.05em solid"><strong> | GitHub</strong></span><span style="border-bottom:0.05em solid"><strong><a href="https://github.com/RagAndRoll/wordbook">://github.com/RagAndRoll/wordbook</a></strong></span></summary></details></h3><div class="indented"><ul id="36411151-f050-4575-9730-1b711193e17f" class="toggle"><li><details open=""><summary>Next.js</summary><ul id="65fa8766-a588-46cf-aec2-77285e329fc3" class="bulleted-list"><li style="list-style-type:disc">Routing</li></ul><ul id="d288d283-d4d5-4ec3-8c04-8e54047d1d5e" class="bulleted-list"><li style="list-style-type:disc">page management</li></ul><ul id="889dcea0-61b3-4cbd-8e53-586eb3ebc322" class="bulleted-list"><li style="list-style-type:disc">CEO optimization</li></ul><ul id="dbb3b34e-0504-4b36-b9e0-7a402085f929" class="bulleted-list"><li style="list-style-type:disc">backend requests from local Next.js api Real-time update of server data</li></ul><ul id="52add166-ede1-44a6-b850-394cb32663d3" class="bulleted-list"><li style="list-style-type:disc">Interface design and layout for SEO optimization with next.js</li></ul><ul id="872e3615-5628-4b0b-8077-7113716427d7" class="bulleted-list"><li style="list-style-type:disc">Recycling of components in different views</li></ul></details></li></ul><ul id="d974e51d-b3d5-4f40-b83a-cb38fdf94937" class="toggle"><li><details open=""><summary>Redux</summary><ul id="cd178935-4cef-482c-9946-6615e583811a" class="bulleted-list"><li style="list-style-type:disc">State management</li></ul><ul id="ec3e9220-458a-4565-ac2c-9e9fee1be049" class="bulleted-list"><li style="list-style-type:disc">Organization of logic in actions and reducers</li></ul><ul id="9c14108b-e52d-4cf0-a332-3debacac1bbf" class="bulleted-list"><li style="list-style-type:disc">hosting authentication data in cookies</li></ul><ul id="11a27570-1397-4a2d-960d-7ae21a619906" class="bulleted-list"><li style="list-style-type:disc">hosting study session data</li></ul></details></li></ul><ul id="88f6a5a7-1fbf-4c13-b752-1d2d115bc1db" class="bulleted-list"><li style="list-style-type:disc">Tailwind CSS to speed up frontend development</li></ul><ul id="153149d9-661c-40b0-954d-eb22a0fc9a0e" class="bulleted-list"><li style="list-style-type:disc">Deploy vercel</li></ul></div></div><h1 id="c790d135-5194-4892-b71b-d9798a73c35f" class=""><details open=""><summary>📋 Feature Descriptions</summary></details></h1><div class="indented"><h1 id="4247b4c5-0cb9-4101-ad86-8ca62deb683b" class=""><details open=""><summary>1.- Database Model</summary></details></h1><div class="indented"><p id="003f3cf5-8023-4e76-8e6f-a5122fefab56" class=""><strong>Users</strong> ⇒ user registration and authentication</p><ul id="a1a2eb21-0885-4ef6-88c8-487e63d225c6" class="bulleted-list"><li style="list-style-type:disc">Email address</li></ul><ul id="901ec0b3-f0e7-4d45-93cf-736bfe19532a" class="bulleted-list"><li style="list-style-type:disc">Password</li></ul><p id="587b588a-935b-47f5-82de-cb1fd1b0f978" class=""><strong>WordTerms</strong> ⇒ word or phrase that may be available to multiple users as a global dictionary.</p><ul id="625cac5a-3d75-43bf-a943-9b3d8117816d" class="bulleted-list"><li style="list-style-type:disc">Word ⇒ specific word</li></ul><ul id="16b73168-5ea9-40e3-af36-3b252514039d" class="bulleted-list"><li style="list-style-type:disc">Language ⇒ determines which language the word is in for translation or audio generation.</li></ul><ul id="16fd4ce3-84a1-4cc9-8a19-77e3ed03d7b4" class="bulleted-list"><li style="list-style-type:disc">Phrase = boolean that determines if it is composed of several terms</li></ul><p id="51caa8cb-310d-4549-a6d8-3e40bfea115d" class=""><strong>Flashcard</strong></p><ul id="5381ff6e-4cf7-41ee-81c2-402e84442e29" class="bulleted-list"><li style="list-style-type:disc">user ⇒ foreign key <strong>Users</strong> that determines the user that owns the flashcard</li></ul><ul id="a3bf9609-bfc5-452d-a3eb-3951ba6e2568" class="bulleted-list"><li style="list-style-type:disc">terms ⇒ foreign key <strong>WordTerms</strong><p id="e24db2ce-8622-4c46-8483-3f759650d5b2" class=""><strong>Spaced repetition algorithm data:</strong></p><ul id="42bab068-81f4-492c-a9c6-7dc3d1990953" class="bulleted-list"><li style="list-style-type:circle">easiness ⇒ average number of errors and hits.</li></ul><ul id="72d1b49e-b089-4c93-9b71-5710768d5fff" class="bulleted-list"><li style="list-style-type:circle">last_review ⇒ date of the last review</li></ul><ul id="0f9d3d39-4a93-49f7-b4c3-3d1cff12cf22" class="bulleted-list"><li style="list-style-type:circle">interval ⇒ average determining the next repetition date</li></ul><ul id="1177fedb-7471-48e8-8f04-d717160afab2" class="bulleted-list"><li style="list-style-type:circle">repetitions ⇒ number of times the flashcard has been answered</li></ul><ul id="f46e2cb5-e76b-4a97-aecb-50ea366942c5" class="bulleted-list"><li style="list-style-type:circle">next_review_date ⇒ date when the flashcard will be reviewed again</li></ul></li></ul></div><h1 id="92a7356c-86f2-4893-b70e-f32fb2020e6d" class=""><details open=""><summary>2.- User authentication and object creation by user using JSON Web Token between Django and React</summary></details></h1><div class="indented"><ul id="9a25c77a-56a1-405d-a2d3-9fa75541fc54" class="toggle"><li><details open=""><summary>Django model of custom user authentication using AbstractBaseUser and BaseUserManager</summary><ul id="e79a0232-fb1c-4278-85e5-c2465ba1010b" class="bulleted-list"><li style="list-style-type:disc">User registration with Email (without email authentication)</li></ul><ul id="4373bf92-85cd-41d5-90e6-5f510808a945" class="bulleted-list"><li style="list-style-type:disc">Login via email</li></ul><figure id="01f9bfbe-8c5e-4d8d-9b14-5b17ef0ae5a6" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled.png"/></a></figure></details></li></ul><ul id="33a0194c-5f43-44e8-8809-5a9147f51c1e" class="toggle"><li><details open=""><summary>Authentication and user registration endpoints using Simple JWT and Django Rest Framework</summary><p id="a7381781-cdf6-40dd-94d8-e5bbbe9c0288" class="">package : <a href="https://django-rest-framework-simplejwt.readthedocs.io/en/latest/">https://django-rest-framework-simplejwt.readthedocs.io/en/latest/</a></p><figure id="523c00e9-6900-4d89-9f4d-fdeffc06904f" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%201.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%201.png"/></a></figure></details></li></ul><ul id="d2ed9af2-61d0-485d-a163-af977dae4e93" class="toggle"><li><details open=""><summary>Frontend Redux JWT Rest Api authentication flow</summary><ul id="a0da9490-5539-4056-820d-3ffe8b1a4bff" class="toggle"><li><details open=""><summary>Login</summary><ul id="429a3e52-6e5e-4f32-918c-04bfd66e3c05" class="toggle"><li><details open=""><summary>Path login Routing Next</summary><blockquote id="2d457bf9-21a4-49c1-bb95-d407bfb2252d" class="">Next.js has a routing system using the files created in the pages folder which generates this url https://wordbook-ragandroll.vercel.app/user/login</blockquote><figure id="f109bb0d-9a2f-4cc0-9511-a868874af58c" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%202.png"><img style="width:240px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%202.png"/></a></figure></details></li></ul><ul id="81724803-a3a9-47ef-8646-820fcd83826e" class="toggle"><li><details open=""><summary>Acceptance of the registration form and sent to actions</summary><figure id="4e79ca46-e72c-44c7-95bb-90fa3586aaf0" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%203.png"><img style="width:624px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%203.png"/></a></figure><figure id="af59b89b-6afd-411d-8eba-ab1928d9dcf0" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%204.png"><img style="width:528px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%204.png"/></a></figure></details></li></ul></details></li></ul><ul id="13a6bc43-4678-4338-880e-f8c1f3c2cf8e" class="toggle"><li><details open=""><summary>Redux actions</summary><ul id="d1ac6983-194a-474c-ae99-6e7a0cca28b4" class="toggle"><li><details open=""><summary>Redux files</summary><figure id="aeb9d1a1-8fcc-40e6-9656-7a8274e08c25" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%205.png"><img style="width:144px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%205.png"/></a></figure></details></li></ul><ul id="13a32188-3503-45b8-9499-574390b550b5" class="toggle"><li><details open=""><summary>Call of chain actions</summary><figure id="1aaaf2d8-f756-4779-a023-923e698848b6" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%206.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%206.png"/></a></figure><ul id="3640531a-e60e-4661-9663-3378827eeeed" class="bulleted-list"><li style="list-style-type:disc">These actions only make requests to the local Next api and based on the success or error response they send a type to the reducer of fail or success.<ol type="1" id="14f1eb62-356d-485f-b3dd-b5fe6231b9bb" class="numbered-list" start="1"><li>register sends the password and email data to login if the registration succeeds</li></ol><ol type="1" id="d7f815ce-4196-4620-8329-d143a9d08061" class="numbered-list" start="2"><li>login sends refresh token and access data to auth_action to keep the session authenticated.</li></ol><ol type="1" id="c18d4efd-08ed-4b9e-9d00-48e8919dfba4" class="numbered-list" start="3"><li>Auth_action saves the tokens in the cookies to obtain the user data by means of these tokens, with these user data are made registration of objects in the database.</li></ol></li></ul><ul id="88db8dc0-6449-4b3e-8254-8a72e0d11929" class="bulleted-list"><li style="list-style-type:disc">once logged in is success must be done the authentication by request in auth_action to generate a refresh token and access token to be saved in the cookies.</li></ul></details></li></ul></details></li></ul><ul id="3428dd52-87b4-4a20-84ad-8f2a04c866e6" class="toggle"><li><details open=""><summary>Next Api</summary><ul id="fbe6c233-2aa5-4649-abdf-b0bf0ee9a4ad" class="toggle"><li><details open=""><summary>the actions access the urls of the api like any page because they are in the folder page</summary><figure id="6b74e9c8-1810-42df-9431-86937527e00e" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%207.png"><img style="width:192px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%207.png"/></a></figure></details></li></ul><ul id="c7f0a87c-b80d-44bd-a122-8300bf789fa5" class="toggle"><li><details open=""><summary>Next.js Local api makes requests to the backend endpoints and saves the data in cookies</summary><figure id="2aa9b4a0-0300-4b0f-a0c4-d9bcea652c07" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%208.png"><img style="width:576px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%208.png"/></a></figure></details></li></ul><ul id="ecb59a17-8a14-4102-8fa6-50ead98e46fb" class="toggle"><li><details open=""><summary>Access token</summary><figure id="d2618a96-e74d-46ef-ac78-e973bf9fdc71" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%209.png"><img style="width:1056px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%209.png"/></a></figure><figure id="e97b85fc-9546-4796-880d-e7b20eb1e110" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2010.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2010.png"/></a></figure></details></li></ul><ul id="a318d389-7954-471a-b2e1-833b3428b49c" class="bulleted-list"><li style="list-style-type:disc">if the data is correct it receives a correct response from the backend then gives a successful response to the action which triggers an action to the reducer</li></ul></details></li></ul><ul id="b932205e-d7bd-4238-bac2-a5a144b6083e" class="toggle"><li><details open=""><summary>Reducer</summary><figure id="4c623904-4af4-4f6c-9dcc-53af98b52e95" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2011.png"><img style="width:480px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2011.png"/></a></figure><ul id="bb6c09eb-f202-44a3-b46d-25c4609cdb41" class="bulleted-list"><li style="list-style-type:disc">initial user state is true</li></ul><ul id="f78069c7-f5bd-4de4-8acf-88f31fa9b8d4" class="bulleted-list"><li style="list-style-type:disc">if authentication fails it becomes false and sends to login url</li></ul><ul id="fa70f6e9-a67b-4d0d-84c3-3af91c98b766" class="bulleted-list"><li style="list-style-type:disc">if the authentication is successful the user data is saved and used by the application sent by the store</li></ul><figure id="e25c73f4-2603-4800-8dcb-e49a98cd8dd6" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2012.png"><img style="width:528px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2012.png"/></a></figure></details></li></ul><ul id="1651c235-bf05-48f9-9293-0115f4239fb4" class="toggle"><li><details open=""><summary>call of the actions in layout</summary><ul id="c930289a-ec6e-415d-8a5b-83a6f8410a3b" class="toggle"><li><details open=""><summary>the layout is the layer that contains the metadata that is used in all the pages</summary><p id="d9d6be60-5af8-4ab0-9be6-c179428ddfb7" class=""><code>index</code></p><figure id="704375bc-1652-47e9-abd8-62a4c35e7f45" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2013.png"><img style="width:672px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2013.png"/></a></figure></details></li></ul><ul id="14924869-281d-4e6f-8f2b-7b0abf255cb5" class="toggle"><li><details open=""><summary>any page you update will call for auth action</summary><figure id="1753e96d-af24-4d55-9780-0faab4671370" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2014.png"><img style="width:720px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2014.png"/></a></figure></details></li></ul></details></li></ul></details></li></ul><p id="adee91a5-5cbb-4d1e-a7af-4de7559466f5" class="">
+</p></div><h1 id="cb91f88e-e3a4-49c2-a0ae-051d9e7ef49a" class=""><details open=""><summary>3.- Text to Audio Automatic API with Django + gTTS</summary></details></h1><div class="indented"><ul id="1c769399-64ca-4029-a55f-add7c7d5c14a" class="toggle"><li><details open=""><summary>1.- gTTS Python package for natural voice audio file generation</summary><figure id="da4ab31c-5a9b-437d-8aff-a1be3ba66bc0" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2015.png"><img style="width:720px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2015.png"/></a></figure><ul id="cb5c40d7-7848-45b5-9dc3-42760c4ec4b6" class="toggle"><li><details open=""><summary>1.- check that the term to be translated exists in the flashcard&#x27;s database</summary><figure id="283c4fb8-9af8-4021-a0b3-dffa791ecb24" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2016.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2016.png"/></a></figure></details></li></ul><ul id="89232c90-53c7-40f9-a752-a3e31653e8e9" class="toggle"><li><details open=""><summary>2.- Save the files in a temporary folder to avoid server saturation</summary><figure id="e872f110-2649-4cf2-aefa-167c06103d3d" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2017.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2017.png"/></a></figure><figure id="f051f22e-4c28-4868-be10-77c10db49c71" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2018.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2018.png"/></a></figure><figure id="fc050def-543f-4fe6-a3ed-c982bd974731" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2019.png"><img style="width:192px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2019.png"/></a></figure></details></li></ul><ul id="b92a1e7c-74e0-443c-9c06-ed99dbf711d4" class="toggle"><li><details open=""><summary>3.- If the file already exists avoid re-creating it</summary><figure id="7e1224b1-c049-42e8-82b3-dff8771c8bf3" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2020.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2020.png"/></a></figure></details></li></ul><ul id="d6d42529-1aa1-4c4b-be94-f5fb12df5767" class="toggle"><li><details open=""><summary>4.- Audio file generated and served on the Web</summary><figure id="b852578e-b038-43a2-91d1-2cb57a6ac8e3" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2021.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2021.png"/></a></figure></details></li></ul></details></li></ul><ul id="d1ea3520-de14-4bc6-8666-b5087dc74099" class="toggle"><li><details open=""><summary>2.- Endpoint of api that takes the text from the flashcard sent by the frontend and serves the audios in FileResponse</summary><figure id="36bb0378-351a-490b-8fdc-38d1e2607ff4" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2022.png"><img style="width:816px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2022.png"/></a></figure></details></li></ul><ul id="119c08d9-2c21-4a86-ac11-44af78c15e74" class="toggle"><li><details open=""><summary>4.- The frontend takes sends to the backend the corresponding word and uses it in an audio object that is played automatically or by user click, using asynchronous requests with fetch</summary><ul id="f02c04ef-af1b-4bfb-ad0b-7c2e9baa477b" class="toggle"><li><details open=""><summary>Request to create the file and get URL of the audio generated</summary><figure id="546091bb-ae98-45e0-b04a-1c025630ee37" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2023.png"><img style="width:528px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2023.png"/></a></figure></details></li></ul><ul id="28d3c4a8-0e88-47d1-aa40-954df9467036" class="toggle"><li><details open=""><summary>Play and stop audio on click</summary><figure id="13aec051-b46f-4f73-9a64-4300757da36b" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2024.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2024.png"/></a></figure><figure id="9e702643-0f04-4929-9c35-16ea7ec38e74" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2025.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2025.png"/></a></figure></details></li></ul></details></li></ul><p id="6a8a4f63-9eca-4b8d-a75c-135923cd5b1c" class="">
+</p></div><h1 id="2fe2178c-0e11-494f-ba6f-45099d990420" class=""><details open=""><summary>4.- Flashcards quiz and study interface</summary></details></h1><div class="indented"><ul id="34aefefb-12e4-4fa8-82c6-45315536093c" class="toggle"><li><details open=""><summary>components</summary><figure id="f6e83dd8-3796-47d9-aa16-419fa20193e1" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2026.png"><img style="width:192px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2026.png"/></a></figure></details></li></ul><ul id="9fa71236-1308-4cf5-9cd2-ad2c7e1a9d73" class="toggle"><li><details open=""><summary>Interface</summary><ul id="1d701220-d481-49d8-8a30-bf0193f344b5" class="bulleted-list"><li style="list-style-type:disc">calls the store data</li></ul><ul id="7c8b2c3a-e1fa-4740-9f36-10a46002f4ee" class="toggle"><li><details open=""><summary>Manages the components of</summary><ul id="10699027-f9bb-4a37-9549-f227bb8ac6f7" class="bulleted-list"><li style="list-style-type:disc">wordbook list</li></ul><ul id="f41fd17c-5113-4a52-bdc6-f4f2547c2012" class="bulleted-list"><li style="list-style-type:disc">Games</li></ul><ul id="9649c03d-ef0e-4366-9279-50301c41e629" class="bulleted-list"><li style="list-style-type:disc">daily todo</li></ul><ul id="2a07ed8e-290c-40ee-9d75-82a61203d74c" class="bulleted-list"><li style="list-style-type:disc">form add</li></ul></details></li></ul><ul id="edd45397-71f6-4427-aa69-4c829b3179cf" class="toggle"><li><details open=""><summary>takes the set of cards that will be used by the flashcard depending on the Review or listening page</summary><figure id="4e061c51-28d9-4f4b-aa38-8639a74ecb1a" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2027.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2027.png"/></a></figure><figure id="22cb5a51-9393-4560-9c39-344171e299af" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2028.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2028.png"/></a></figure><ul id="ae29bb85-e484-4c30-94e3-a4ca3aa7bcb5" class="bulleted-list"><li style="list-style-type:disc"><code>Cards</code> contains the whole set of completed words</li></ul><ul id="e921be0e-0abe-4d2e-8595-a2d5c068a80c" class="bulleted-list"><li style="list-style-type:disc"><code>session_cards</code> contains only a set of 5 terms corresponding to review</li></ul><ul id="69ecd895-2482-468a-a681-5e4073fea4b2" class="bulleted-list"><li style="list-style-type:disc">page <code>listening</code> takes the cards from <strong>session_study</strong> ⇒ <code>session_cards</code>.<ul id="6679c7ef-a0e0-46f5-b54c-b2089f7bfefb" class="bulleted-list"><li style="list-style-type:circle">Listening makes use of the <code>StudySessionLayout</code> layout</li></ul><figure id="2c47140a-7b02-46cd-a3bc-b6ed8f246922" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2029.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2029.png"/></a></figure><figure id="af1bfda6-830f-4f02-8e24-e82eb16e72ef" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2030.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2030.png"/></a></figure></li></ul><ul id="fff23500-2bab-4f8a-8bcc-bfe6b256b08d" class="bulleted-list"><li style="list-style-type:disc">page <code>review</code> takes <strong>all_cards</strong> ⇒ <code>Cards</code><ul id="30bd9b60-3afb-4386-ba5a-03293f388359" class="bulleted-list"><li style="list-style-type:circle">Since the parameter study_session is not defined it is taken as false.</li></ul><figure id="ee4c4d9f-75f5-403f-9029-45e395189915" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2031.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2031.png"/></a></figure></li></ul></details></li></ul><ul id="c3572b89-59a0-4237-b1f7-1410505e5f37" class="toggle"><li><details open=""><summary>Review</summary><figure id="86a6448a-3301-4da9-aec9-824c2b7fa259" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2032.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2032.png"/></a></figure><ul id="bd294fed-44c7-4739-9346-ca04048cefd9" class="bulleted-list"><li style="list-style-type:disc">shows all cards in order determined by the parameter curren</li></ul><ul id="8cfae801-7add-4d55-94ef-5234912ddeec" class="bulleted-list"><li style="list-style-type:disc">an action modifies that parameter which is global in all components to know which card is being used</li></ul><figure id="1dde57fa-179e-474c-a5c0-a3d236e17a15" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2033.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2033.png"/></a></figure></details></li></ul><ul id="aaba5111-6924-4856-943f-4495435b38cc" class="toggle"><li><details open=""><summary>Listening <code>StudySessionLayout</code></summary><p id="8849d203-26ea-4bce-9302-7897f0b4a177" class="">makes use of the <code>StudySessionLayout</code> component</p><p id="7661a2aa-041e-45c8-aa4d-5d27d526070e" class="">avoids displaying the words</p><p id="6c0a3262-981b-4cf8-b623-57bea250b16d" class="">shows an input that relates what is written to the word or term played by the current letter displayed and played by the flash card</p><figure id="b47b54ab-0d61-470f-809d-3a2661bf1c20" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2034.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2034.png"/></a></figure></details></li></ul><ul id="48e0a4e3-66e6-4fd1-bf9b-79a21cdeaced" class="toggle"><li><details open=""><summary><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909.html">Flashcard</a> [Text to audio Automatic API with Django + gTTS]</summary><ul id="5a7eb933-e7f8-41fd-8b46-73617149dbb7" class="bulleted-list"><li style="list-style-type:disc">In charge of playing the audio</li></ul><ul id="b262fbf9-8376-45f5-8ae9-7e9f1a0e3600" class="bulleted-list"><li style="list-style-type:disc">In charge of displaying the current card based on the current parameter</li></ul></details></li></ul></details></li></ul><ul id="47713fc0-2931-4a0b-9504-258038d98d95" class="toggle"><li><details open=""><summary>Quiz Interface</summary><ul id="87af7bbf-ea27-4907-9563-321f33785fdd" class="toggle"><li><details open=""><summary>If the answer given by the user is incorrect it shows a feedback that makes him write it correctly, then this letter is sent to the end to be played again</summary><figure id="a1391b07-b7e3-42b2-a233-bf1079a9d233" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2035.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2035.png"/></a></figure></details></li></ul><ul id="975753e0-1b3b-44c4-83fb-7c3134babe19" class="toggle"><li><details open=""><summary>each incorrect answer saves a failed answer port that will be sent to the backend to determine its next replay by the spaced replay algorithm.</summary><figure id="db5d5806-e1b1-49b1-b784-7ef38fe4430c" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2036.png"><img style="width:624px" src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2036.png"/></a></figure><p id="34948007-b3e6-4622-a32a-7fc50ac8888a" class="">will only be sent to the backend and its next revision determined if the first one is answered correctly.</p></details></li></ul></details></li></ul></div><h1 id="e39b6a01-1f8e-4eab-a9b0-4bf2bf9c4dad" class=""><details open=""><summary>5.- Spaced repetition algorithm [backend].</summary></details></h1><div class="indented"><p id="727a901e-5a31-4c4a-a0ba-c98ae01f5e24" class="">supermemo2 spaced repetition algorithm</p><ul id="fec67a43-f3ab-4114-bb2f-f749b126578d" class="toggle"><li><details open=""><summary>The letter is retrieved from the database by its id</summary><figure id="316f7044-d4cf-4460-a301-51ee94d4e3a4" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2037.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2037.png"/></a></figure></details></li></ul><ul id="efe630bf-0e42-4d7a-886e-eaeb10af104e" class="toggle"><li><details open=""><summary>check if it is the first review and update the <code>flashcard</code> data by the data obtained by the algorithm stored in <code>review</code>.</summary><figure id="aa66fd43-9426-4e29-a9d4-edc69dedcf0b" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2038.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2038.png"/></a></figure></details></li></ul><ul id="120862b4-cd21-4c13-9fc2-5e2711415f4a" class="toggle"><li><details open=""><summary>If it is not the first time and we have previous data we use it to determine the next review.</summary><figure id="f978f75c-fd20-4d1c-9a7b-069eb0d63d8f" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2039.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2039.png"/></a></figure></details></li></ul><ul id="8813190a-4166-4183-9ec6-04988ee38624" class="toggle"><li><details open=""><summary>if the card has already been evaluated today just add a +1 to repetitions</summary><figure id="1c82f197-8af3-4e03-8b61-60d662c3150d" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2040.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2040.png"/></a></figure></details></li></ul><ul id="cf9f0169-f26f-4a8d-bc8d-bb23a42d9620" class="toggle"><li><details open=""><summary>It is always updated to <code>today</code> the <code>last_review</code> if the card is reviewed</summary><figure id="620f849e-d859-4c11-878d-35086ac2b3ac" class="image"><a href="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2041.png"><img src="Wordbook%20Web%20Application%20Learn%20Language%20%5B%20Django%20-%20c726fe8db73845d598e772aa49a59909/Untitled%2041.png"/></a></figure></details></li></ul></div></div></div></article></body></html>
