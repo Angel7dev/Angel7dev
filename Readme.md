@@ -1,7 +1,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Angel Riera Full Stack Dev Django - React </title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="readme/notion/main.css">
 </head>
 <body>
 		<header>
@@ -300,7 +300,7 @@
 			<details>
 				<summary class="h2">Full Stack Django Developer [ Python en equipo - Jan 2022 - Still ] </summary>
 				<div>
-					<p>Description: <a
+					<p>Description: <a target="_blank"
 							href="https://angelriera.notion.site/Marketplace-AisModa-Django-TailwindCSS-17935a6783f14c30be846be428a83850"><span>👜</span>Marketplace
 							AisModa [ Django - TailwindCSS ]</a> </p>
 					<p>
@@ -318,14 +318,14 @@
 											documentation</strong></span></summary>
 								<ol type="1" start="1">
 									<li><span><strong>Scrum
-												Methodology</strong></span> <a
+												Methodology</strong></span> <a target="_blank"
 											href="https://github.com/Python-en-equipo/MarketPlace/wiki/0.--Metodolog%C3%ADa-scrum">https://github.com/Python-en-equipo/MarketPlace/wiki/0.--Metodología-scrum</a>
 									</li>
 								</ol>
 								<ol type="1" start="2">
 									<li><strong><span>Getting
 												Started</span></strong><strong><strong>
-											</strong></strong><a
+											</strong></strong><a target="_blank"
 											href="https://github.com/Python-en-equipo/MarketPlace/wiki/1.--Instalaciones-previas">https://github.com/Python-en-equipo/MarketPlace/wiki/1.--Instalaciones-previas</a>
 										<ol type="a" start="1">
 											<li><span><strong>Postgresql</strong></span>
@@ -335,13 +335,13 @@
 								</ol>
 								<ol type="1" start="3">
 									<li><span><strong>Docker
-											</strong></span><a
+											</strong></span><a target="_blank"
 											href="https://github.com/Python-en-equipo/MarketPlace/wiki/3.--Docker">https://github.com/Python-en-equipo/MarketPlace/wiki/3.--Docker</a>
 									</li>
 								</ol>
 								<ol type="1" start="4">
 									<li><span><strong>Development environments:
-											</strong></span><a
+											</strong></span><a target="_blank"
 											href="https://github.com/Python-en-equipo/MarketPlace/wiki/2.--Entorno-Virtual">https://github.com/Python-en-equipo/MarketPlace/wiki/2.--Entorno-Virtual</a>
 										<ol type="a" start="1">
 											<li><span><strong>pip</strong></span>
@@ -419,29 +419,29 @@
 			<div class="grid">
 				<div>
 					<h3>Full Stack projects </h3>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Wordbook-Web-Application-Learn-Language-Django-PostgresSQL-DRF-SJWT-React-Next-js-Red-c726fe8db73845d598e772aa49a59909"><span>📘</span>Wordbook
 							Web Application Learn Language [ Django - PostgresSQL - DRF -
 							SJWT || React - Next.js - Redux - TailwindCSS ]</a></figure>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Traker-Interview-Django-JavaScript-TailwindCSS-d0fe74c3c6e24d6ea6b0e1571988a100"><span>📋</span>Traker
 							Interview [ Django - JavaScript - TailwindCSS ]</a></figure>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Twitter-Clone-Django-TailwindCSS-39a5c1ab24754682ab05283191319094"><span>🐦</span>Twitter
 							Clone [ Django - TailwindCSS ]</a></figure>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Marketplace-AisModa-Django-TailwindCSS-17935a6783f14c30be846be428a83850"><span>👜</span>Marketplace
 							AisModa [ Django - TailwindCSS ]</a></figure>
 				</div>
 				<div>
 					<h3>Frontend web Layout </h3>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Personal-Portfolio-React-Next-TailwindCSS-45a7a1800e394c318c94dfc65ec84cd1"><span>🗃️</span>Personal
 							Portfolio [ React - Next - TailwindCSS ]</a></figure>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Marketplace-React-TailwindCSS-cab335afafd84c5f8d17bc4489a11c45"><span>👜</span>Marketplace
 							[ React - TailwindCSS ] </a></figure>
-					<figure><a
+					<figure><a target="_blank"
 							href="https://angelriera.notion.site/Landing-page-App-React-TailwindCSS-ad4a0fbca60a40f5b50a91161239ae04"><span>📱</span>Landing
 							page App [ React - TailwindCSS ]</a></figure>
 				</div>
@@ -461,7 +461,7 @@
 						</summary>
 						<div>
 							<div>
-								<p><span><strong>Portfolio:</strong></span> <a
+								<p><span><strong>Portfolio:</strong></span> <a target="_blank"
 										href="https://ragandroll.github.io/RagAndRoll/"><strong>https://ragandroll.github.io/RagAndRoll/</strong></a>
 								</p>
 								<p>As a person who is passionate about learning,
@@ -560,17 +560,16 @@
 		<br>
 		<!-- BLOG -->
 		<details>
-			<summary><span><strong class="h1">📜 Blog </strong></span><span><strong><a
+			<summary><span><strong class="h1">📜 Blog </strong></span><span><strong><a target="_blank"
 							href="https://dev.to/ragandroll">https://dev.to/ragandroll</a></strong></span>
 			</summary>
 			<div>
 				<ol type="1" start="1">
-					<li><a
-							href="https://dev.to/ragandroll/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
+					<li><a target="_blank" href="https://dev.to/ragandroll/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
 								Docker como entorno de desarrollo con Django y Postgesql</strong></a></li>
 				</ol>
 				<ol type="1" start="2">
-					<li><a target="_blank"href="https://dev.to/ragandroll/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
+					<li><a target="_blank" href="https://dev.to/ragandroll/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
 								Carrusel React personalizable con tailwind CSS</strong></a></li>
 				</ol>
 			</div>
