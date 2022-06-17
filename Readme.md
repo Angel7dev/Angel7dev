@@ -1,11 +1,70 @@
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Angel Riera Full Stack Dev Django - React </title>
-	<link rel="stylesheet" href="readme/notion/main.css">
-</head>
+<style>
+	body {
+    background-color: rgb(27, 30, 34);
+    color: #dddce0;
+    line-height: 1.5rem;
+    /* font-family: Source Serif Pro,serif; */
+    font-weight: lighter;
+    font-size: 120%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+a {
+    color: #486fdb;
+    text-decoration: none;
+    font-weight: bold;
+}
+h1,
+.h1 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+}
+h2,
+.h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+h3,
+.h3 {
+    font-size: 1.5rem;
+    text-underline-offset: 2;
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+}
+.django {
+    color: #006464;
+    font-weight: bolder;
+}
+.react {
+    color: #1d64a7;
+    font-weight: bolder;
+}
+details{
+    margin-bottom: 2%;
+}
+summary{
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.grid{
+    display: flex;
+    justify-content: space-around;
+}
+.grid div{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+li{
+    list-style-type: none;
+}
+</style>
 <body>
 		<header>
-			<img src="" />
+			<!-- <img src="" /> -->
 			<h1 class="text-center">Angel Riera Full Stack Dev <br> <span class="django">Django</span>-<span
 					class="react">React</span>
 			</h1>
@@ -581,11 +640,9 @@
 <p align="center"> 
 <img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=ragandroll&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </p>
-
 <p align="center"> 
 <img  src="https://github-readme-stats.vercel.app/api?username=ragandroll&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
 </p>
-
 <p align="center" >
 <img  src="https://github-readme-streak-stats.herokuapp.com/?user=ragandroll&layout=compact&langs_count=7&theme=chartreuse-dark" alt="ragandroll" />
 </p>
