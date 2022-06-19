@@ -64,3 +64,7 @@ to {
     @apply block text-2xl my-0  hover:bg-blue-300 hover:text-sky-900 py-4 w-full
 }
 
+/* .algo{
+    bg-[url("images/gallery/img3.jpg")];
+    background-image: url("images/gallery/img3.jpg");
+} */
