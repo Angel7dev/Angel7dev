@@ -1,27 +1,19 @@
-import Onepage from '../components/onepage'
+import Home from '../components/home'
 import { getExpAction, getProjectsAction, getSkillsAction, getLayoutProjectsAction} from '../redux/actions/portfolio'
 import { useDispatch} from 'react-redux'
 import { useEffect } from 'react'
-
-
-function Home() {
+function index() {
   const dispatch = useDispatch()
-
   useEffect(()=>{
     dispatch(getExpAction())
     dispatch(getProjectsAction())
     dispatch(getSkillsAction())
     dispatch(getLayoutProjectsAction())
-
-
-    
   })
-
-
-  return <Onepage/>
+  return <Home/>
 }
 
 
-export default Home
+export default index
 
 
