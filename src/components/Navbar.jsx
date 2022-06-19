@@ -35,7 +35,8 @@ const Navbar = () => {
 
 
 
-                    <div className="navbar2 hidden" id='navmenu'>
+                    <div className="w-full text-center font-medium 
+    flex-grow sm:flex sm:justify-center items-center" id='navmenu'>
                         <a href="#projects"
                             className="nav-btn2">
                             Projects
