@@ -2,7 +2,7 @@ import Home from '../components/home'
 import { getExpAction, getProjectsAction, getSkillsAction, getLayoutProjectsAction} from '../redux/actions/portfolio'
 import { useDispatch} from 'react-redux'
 import { useEffect } from 'react'
-function index() {
+function Index() {
   const dispatch = useDispatch()
   useEffect(()=>{
     dispatch(getExpAction())
@@ -14,6 +14,6 @@ function index() {
 }
 
 
-export default index
+export default Index
 
 

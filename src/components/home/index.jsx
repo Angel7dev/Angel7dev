@@ -1,6 +1,5 @@
 import Header from './Header'
 import Layout from '../Layout';
-import Contact from './Contact';
 import Projects from './Projects';
 import LayoutProjects from './LayoutProjects';
 import SkillsExp from './SkillsExp';
@@ -20,7 +19,7 @@ const Home = () => {
 
       <LayoutProjects/>
 
-      <Contact /> */}
+      */}
 
     </Layout>
   )

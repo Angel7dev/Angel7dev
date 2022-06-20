@@ -3,8 +3,14 @@ import { useEffect, useState } from 'react'
 const Header = () => {
 
     //trae imagenes aleatorias
-    const ramdon = () => `https://picsum.photos/id/${Math.floor(Math.random() * 100)}/1000/1000`
-    const images = [ramdon(), ramdon()]
+    //const ramdon = () => `https://picsum.photos/id/${Math.floor(Math.random() * 100)}/1000/1000`
+   
+    const images = [
+        'images/gallery/img1.jpg',
+        'images/gallery/img2.jpg',
+        'images/gallery/img3.jpg',
+    ]
+
     const [current, setCurrent] = useState(0)
     console.log(current)
 
