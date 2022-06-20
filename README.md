@@ -18,7 +18,8 @@ Here are some ideas to get you started:
     font-weight: lighter;
     font-size: 120%;
     margin-left: 2%;
-    margin-right: 2%;">
+    margin-right: 2%;
+	list-style-type: none;">
 <header>
 	<!-- <img src="" /> -->
 	<h1 align="center">Angel Riera Full Stack Dev <br> 
@@ -30,7 +31,7 @@ Here are some ideas to get you started:
 </header>
 <div>
 	<p>
-		I am passionate about devising solutions of
+		I am passionate about devising soultions of
 		minimum effort and maximum result, self-sustainable and enduring over time, for the problems I may face
 		or to improve my environment.Following
 		permaculture design principles adopted as a philosophy of life. (I am really passionate about this
@@ -81,13 +82,11 @@ Here are some ideas to get you started:
 <hr>
 <br>
 <!-- SKILLS -->
-<h1>
-<details>
-	<summary open=""> 🛠 Skills Languages and Tools:
-	</summary>		
+	<h1 open=""> 🛠 Skills Languages and Tools:
+	</h1>		
 	<br>
-	<h6>
-	<div style="  display: flex;
+	<h3>
+	<div style="display: flex;
     justify-content: space-around;">
 		<div>
 			<span><strong>💻 Frontend:</strong></span>
@@ -321,22 +320,16 @@ Here are some ideas to get you started:
 			</ul>
 		</div>
 	</div>
-	</h6>
-
-</details>
-</h1>
+	</h3>
 
 <br>
 <hr>
 <br>
 <!-- EXPERIENCE -->
-<h1>
-<details>
-	<summary style="cursor: pointer;
+	<h1 style="cursor: pointer;
     margin-bottom: 2%;"><span><strong >👨‍💻 Work experience</strong></span>
-	</summary>
-	<br>
-	<h6>
+	</h1>
+	<h3>
 	<details>
 		<summary>Full Stack Django Developer [ Python en equipo - Jan 2022 - Still ] </summary>
 		<div>
@@ -422,7 +415,7 @@ Here are some ideas to get you started:
 							<li>Registration of sellers and publication of products by users</li>
 						</ol>
 						<ol type="1" start="4">
-							<li>Slug URL for products</li>
+							<li>Sulg URL for products</li>
 						</ol>
 						<ol type="1" start="5">
 							<li>Micro-services backend, Products, users.</li>
@@ -457,73 +450,65 @@ Here are some ideas to get you started:
 			</ul>
 		</div>
 	</details>
-</h6>
-</details>
-</h1>
+</h3>
 <br>
 <hr>
 <br>
 <!-- PROJECTS -->
-<h1>
-<details>
-	<summary style="cursor: pointer; margin-bottom: 2%;"><span><strong>💼 Projects</strong></span></summary>
-	<h6>	
+	<h1 style="cursor: pointer; margin-bottom: 2%;"><span><strong>💼 Projects</strong></span></h1>
+	<h3>	
 	<div style="display: flex; justify-content: space-around;">
-		<div>
+		<ul>	
 			<h3 style="text-underline-offset: 2;text-underline-offset: 2;font-weight: bold;">Full Stack projects </h3>
-			<figure><a style=" color: #486fdb;
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Wordbook-Web-Application-Learn-Language-Django-PostgresSQL-DRF-SJWT-React-Next-js-Red-c726fe8db73845d598e772aa49a59909"><span>📘</span>Wordbook
 					Web Application Learn Language [ Django - PostgresSQL - DRF -
-					SJWT || React - Next.js - Redux - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					SJWT || React - Next.js - Redux - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Traker-Interview-Django-JavaScript-TailwindCSS-d0fe74c3c6e24d6ea6b0e1571988a100"><span>📋</span>Traker
-					Interview [ Django - JavaScript - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					Interview [ Django - JavaScript - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Twitter-Clone-Django-TailwindCSS-39a5c1ab24754682ab05283191319094"><span>🐦</span>Twitter
-					Clone [ Django - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					Clone [ Django - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Marketplace-AisModa-Django-TailwindCSS-17935a6783f14c30be846be428a83850"><span>👜</span>Marketplace
-					AisModa [ Django - TailwindCSS ]</a></figure>
-		</div>
-		<div>
+					AisModa [ Django - TailwindCSS ]</a></li>
+		</ul>
+		<ul>
 			<h3 style="font-weight: bold;text-underline-offset: 2;font-weight: bold;">Frontend web Layout </h3>
-			<figure><a style=" color: #486fdb;
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Personal-Portfolio-React-Next-TailwindCSS-45a7a1800e394c318c94dfc65ec84cd1"><span>🗃️</span>Personal
-					Portfolio [ React - Next - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					Portfolio [ React - Next - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Marketplace-React-TailwindCSS-cab335afafd84c5f8d17bc4489a11c45"><span>👜</span>Marketplace
-					[ React - TailwindCSS ] </a></figure>
-			<figure><a style=" color: #486fdb;
+					[ React - TailwindCSS ] </a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Landing-page-App-React-TailwindCSS-ad4a0fbca60a40f5b50a91161239ae04"><span>📱</span>Landing
-					page App [ React - TailwindCSS ]</a></figure>
-		</div>
+					page App [ React - TailwindCSS ]</a></li>
+		</ul>
 	</div>
-	</h6>
-</details>
+	</h3>
 </h1>
 <br>
 <hr>
 <br>
 <!-- EDUCATION -->
-<h1>
-<details>
-	<summary style=" cursor: pointer;
-    margin-bottom: 2%;"><span><strong >📚 Education</strong></span></summary>
-	<h6>
+	<h1 style=" cursor: pointer;
+    margin-bottom: 2%;"><span><strong >📚 Education</strong></span></h1>
 	<ul>
 		<li style="list-style-type: none;">
 			<details>			
@@ -635,22 +620,16 @@ Here are some ideas to get you started:
 			</details>
 		</li>
 	</ul>
-	</h6>
-</details>
-</h1>
 <br>
 <hr>
 <br>
 <!-- BLOG -->
-<h1>
-<details>
-	<summary style="cursor: pointer;
+	<h1 style="cursor: pointer;
     margin-bottom: 2%;"><span><strong >📜 Blog </strong></span><span><strong><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://dev.to/Angel7dev">https://dev.to/Angel7dev</a></strong></span>
-	</summary>
-	<h6>
+	</h1>
 	<div>
 		<ol type="1" start="1">
 			<li><a style=" color: #486fdb;
@@ -665,8 +644,6 @@ Here are some ideas to get you started:
 						Carrusel React personalizable con tailwind CSS</strong></a></li>
 		</ol>
 	</div>
-	</h6>
-</details>
 <!-- CV LINK -->
 </h1>
 <br>
@@ -677,7 +654,7 @@ Here are some ideas to get you started:
 <img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=Angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </p>
 <p align="center"> 
-<img  src="https://github-readme-stats.vercel.app/api?username=Angel7dev&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
+<img  src="https://github-readme-stats.vercel.app/api?username=Angel7dev&show_icons=true&theme=chartreuse-dark&inculde_all_commits=true&count_private=true"/>
 </p>
 <p align="center" >
 <img  src="https://github-readme-streak-stats.herokuapp.com/?user=Angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark" alt="Angel7dev" />

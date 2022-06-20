@@ -18,7 +18,6 @@ const Navbar = () => {
                 <a className='hover:font-semibold' href='#about'> Angel7dev</a>
             </div>
 
-
             {/* items menu */}
             <div id='navmenu'>
             </div>
