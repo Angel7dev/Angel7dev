@@ -18,48 +18,37 @@ const Contact = () => {
 
     };
     return (
-            <div className="w-full bg-stale-900  pb-16  mx-auto" id="contacto">
-                <div className="bg-gradient-to-b from-teal-900 to-sky-900  h-96"></div>
-                <div className="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
-                    <div className="bg-gray-900 w-full shadow shadow-slate-600 rounded-xl p-8 sm:p-12 -mt-72">
-                        <p className="text-3xl font-bold leading-none text-center text-white">Contact me</p>
+        <div className="flex justify-center">
 
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className="md:flex items-center mt-12">
 
-                                <div className="w-full flex flex-col mt-4">
-                                    <label className="font-semibold leading-none">Email</label>
-                                    <input type="email" name="from_email" required
-                                        className="leading-none p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
-                                </div>
-                            </div>
-                            <div className="md:flex items-center mt-8">
-                                <div className="w-full flex flex-col">
-                                    <label className="font-semibold leading-none ">Subject</label>
-                                    <input type="text" name="subject" required
-                                        className="leading-none p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
-                                </div>
-
-                            </div>
-                            <div>
-                                <div className="w-full flex flex-col mt-8">
-                                    <label className="font-semibold leading-none ">Message</label>
-                                    <textarea type="text" name="message" required
-                                        className="h-40 text-base leading-none p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-800 border-0 rounded"></textarea>
-                                </div>
-                            </div>
-                            <div className="flex items-center justify-center w-full">
-                                <button
-                                    className="mt-9 py-4 px-10 text-xl font-bold
-                                bg-blue-700 hover:bg-blue-300 hover:text-sky-900 border rounded-xl       
-                                ">
-                                    Send message
-                                </button>
-                            </div>
-                        </form>
+            <div className='my-24 mx-[2%] w-full sm:w-3/4 md:1/2 flex flex-col justify-center border-4 rounded-lg py-5 border-indigo-900'>
+                <h1 className="text-center text-4xl font-bold" >Contact me</h1>
+                <form ref={form} onSubmit={sendEmail} className="w-full my-8">
+                    <div className="flex flex-col justify-center ">
+                        <input className="w-[90%] md:w-2/3 my-2 mx-auto m-[2%] shaodw shadow-md rounded-full px-4 focus:shadow-blue-600 shadow-sky-900 bg-transparent 
+                        selection:active:focus:bg-transparent focus:outline-none"
+                            autoComplete='off' aria-autocomplete='off' type="email" name="from_email" required placeholder="Email:"
+                        />
+                        <input className="w-[90%] md:w-2/3 my-2 mx-auto m-[2%] shaodw shadow-md rounded-full px-4 focus:shadow-blue-600 shadow-sky-900 bg-transparent 
+                        selection:active:focus:bg-transparent focus:outline-none"
+                            autoComplete='off' type="text" name="subject" required placeholder="Subject:"
+                        />
+                        <textarea className="w-[90%] md:w-2/3 my-2 mx-auto m-[2%] shaodw shadow-md rounded-md px-4 focus:shadow-blue-600 shadow-sky-900 bg-transparent 
+                        selection:active:focus:bg-transparent focus:outline-none h-40"
+                            name="message" required placeholder="Message:"
+                        />
                     </div>
-                </div>
-            </div>
+                        <div className='flex justify-center items-center'>
+                            <button type="submit"
+                            className='-mb-[7rem] px-10 py-3 font-bold 
+                            shadow-md rounded-lg shadow-indigo-900
+                            bg-gradient-to-r from-blue-700 to-indigo-900
+                            hover:bg-gradient-to-l transition-color ease-out duration-300
+                            ' >submit</button>
+                        </div>
+                </form>
+            </div >
+        </div >
 
     )
 }

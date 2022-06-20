@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <nav className='bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600'>
             <div className='pr-5 md:border-r shadow shadow-white md:shadow-none'>
-                <a className='mx-5  hover:font-semibold' href='#about'> Angel7dev</a>
+                <a className='mx-5 ' href='#about'> Angel7dev</a>
             </div>
 
 
