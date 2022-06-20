@@ -1,10 +1,25 @@
+<!--
+**Angel7dev/Angel7dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 <div style="
 	color: #dddce0;line-height: 1.5rem;
 	font-family: Source Serif Pro,serif;
     font-weight: lighter;
     font-size: 120%;
     margin-left: 2%;
-    margin-right: 2%;">
+    margin-right: 2%;
+	list-style-type: none;">
 <header>
 	<!-- <img src="" /> -->
 	<h1 align="center">Angel Riera Full Stack Dev <br> 
@@ -14,9 +29,9 @@
     font-weight: bolder;">React</span>
 	</h1>
 </header>
-<div style="">
+<div>
 	<p>
-		I am passionate about devising solutions of
+		I am passionate about devising soultions of
 		minimum effort and maximum result, self-sustainable and enduring over time, for the problems I may face
 		or to improve my environment.Following
 		permaculture design principles adopted as a philosophy of life. (I am really passionate about this
@@ -34,8 +49,7 @@
 			SJWT || React - Next.js - Redux - TailwindCSS ]</a>
 	</figure>
 </div>
-<div style="  display: flex;
-    justify-content: space-around;">
+<div style="display: flex; justify-content: space-around;">
 	<!-- CONTACT -->
 	<div align="center">
 		<h2>☎️ Contact information</h2>
@@ -43,7 +57,7 @@
     justify-content: space-around;
 	list-style-type: none;">
 	<p align="center">
-<a target="blank" href="https://twitter.com/ragnandroll" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ragnandroll" height="30" width="40" /></a>
+<a target="blank" href="https://twitter.com/Angel7dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ragnandroll" height="30" width="40" /></a>
 <a target="blank" href="https://www.linkedin.com/in/angelriera/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/angelriera/" height="30" width="40" /></a>
 </p>
 			<!-- <li><a style=" color: #486fdb;
@@ -54,7 +68,7 @@
     font-weight: bold;" target="_blank" href=" https://angel-riera.vercel.app/">🔗<br/>Web</a></li>
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href=" https://github.com/RagAndRoll">🔗<br/>GitHub</a></li>
+    font-weight: bold;" target="_blank" href=" https://github.com/Angel7dev">🔗<br/>GitHub</a></li>
 			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank" href="https://www.linkedin.com/in/angelriera/">🔗<br/>LinkedIn</a></li>
@@ -68,20 +82,18 @@
 <hr>
 <br>
 <!-- SKILLS -->
-<details>
-	<summary open=""> <span style="    font-size: 3rem;
-    line-height: 2.8rem;
-    font-weight: bold;">🛠 Skills Languages and Tools:</span></summary>		
+	<h1 open=""> 🛠 Skills Languages and Tools:
+	</h1>		
 	<br>
-	<div style="  display: flex;
+	<h3>
+	<div style="display: flex;
     justify-content: space-around;">
 		<div>
 			<span><strong>💻 Frontend:</strong></span>
 			<ul>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>JavaScript</strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>JavaScript</strong></summary>
 						<ul>
 							<li>jQuery</li>
 							<li>Fetch</li>
@@ -91,13 +103,11 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>React </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>React </strong></summary>
 						<ul>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">State management</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">State management</summary>
 									<ul>
 										<li>Redux</li>
 										<li>UseState</li>
@@ -108,8 +118,7 @@
 							</li>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">Hooks</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">Hooks</summary>
 									<ul>
 										<li>React-router-dom </li>
 										<li>UseRef</li>
@@ -118,8 +127,7 @@
 							</li>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>Next.js </strong></summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;"><strong>Next.js </strong></summary>
 									<ul>
 										<li>React redux integration - redux
 											thunk</li>
@@ -136,8 +144,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>HTML5 and CSS3 </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>HTML5 and CSS3 </strong></summary>
 						<p>forms html methods</p>
 						<p>Css   display: flex;
     justify-content: space-around; - flex </p>
@@ -154,20 +161,17 @@
 			<ul>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;">Python</summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;">Python</summary>
 						<p>POO</p>
 					</details>
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>Django </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>Django </strong></summary>
 						<ul>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">Authentication</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">Authentication</summary>
 									<ul>
 										<li>User Authentication </li>
 										<li>Customized user authentication
@@ -177,8 +181,7 @@
 							</li>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">Database</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">Database</summary>
 									<ul>
 										<li>SQLite</li>
 										<li>PostgresSQL</li>
@@ -201,8 +204,7 @@
 						<ul>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong> </strong>JWT</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;"><strong> </strong>JWT</summary>
 									<ul>
 										<li>JWT auth with forntend </li>
 										<li>Frontend user authentication </li>
@@ -212,8 +214,7 @@
 							</li>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">Rest</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">Rest</summary>
 									<ul>
 										<li>Rest Full API creation</li>
 										<li>HTTP methods</li>
@@ -229,13 +230,11 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>Database</strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>Database</strong></summary>
 						<ul>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">PostgresSQL</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">PostgresSQL</summary>
 									<ul>
 										<li>Connect with Django </li>
 										<li>Pgadmin Management </li>	
@@ -247,8 +246,7 @@
 							</li>
 							<li style="list-style-type: none;">
 								<details>
-									<summary style="    cursor: pointer;
-    margin-bottom: 2%;">NOSQL</summary>
+									<summary style="cursor: pointer; margin-bottom: 2%;">NOSQL</summary>
 									<p>Firebase</p>
 									<p>Mongodb</p>
 								</details>
@@ -267,8 +265,7 @@
 			<ul>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>Docker </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>Docker </strong></summary>
 						<ul>
 							<li>Create add delete stop builds </li>
 							<li>Images creation and deploy</li>
@@ -279,8 +276,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong> WSL2 </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong> WSL2 </strong></summary>
 						<ul>
 							<li>Creation of environments </li>
 							<li>Terminal handling </li>
@@ -290,8 +286,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>Git </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>Git </strong></summary>
 						<ul>
 							<li>Reset: soft, hard, mixed</li>
 							<li>Branch</li>
@@ -301,8 +296,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>GitHub </strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>GitHub </strong></summary>
 						<ul>
 							<li>Team Work Flow</li>
 							<li>GitHub Actions</li>
@@ -312,8 +306,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><strong>Deploy Services</strong></summary>
+						<summary style="cursor: pointer; margin-bottom: 2%;"><strong>Deploy Services</strong></summary>
 						<ul>
 							<li>Heroku </li>
 							<li>Vercel </li>
@@ -327,24 +320,20 @@
 			</ul>
 		</div>
 	</div>
-</details>
+	</h3>
+
 <br>
 <hr>
 <br>
 <!-- EXPERIENCE -->
-<details>
-	<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong style="    font-size: 3rem;
-    line-height: 2.8rem;
-    font-weight: bold;">👨‍💻 Work experience</strong></span>
-	</summary>
-	<br>
+	<h1 style="cursor: pointer;
+    margin-bottom: 2%;"><span><strong >👨‍💻 Work experience</strong></span>
+	</h1>
+	<h3>
 	<details>
-		<summary style="h2">Full Stack Django Developer [ Python en equipo - Jan 2022 - Still ] </summary>
+		<summary>Full Stack Django Developer [ Python en equipo - Jan 2022 - Still ] </summary>
 		<div>
-			<p>Description: <a style=" color: #486fdb;
-    text-decoration: none;
-    font-weight: bold;" target="_blank"
+			<p>Description: <a style="color: #486fdb; text-decoration: none; font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Marketplace-AisModa-Django-TailwindCSS-17935a6783f14c30be846be428a83850"><span>👜</span>Marketplace
 					AisModa [ Django - TailwindCSS ]</a> </p>
 			<p>
@@ -358,8 +347,7 @@
 			<ul>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong>2.- Creation of
+						<summary style="cursor: pointer; margin-bottom: 2%;"><span><strong>2.- Creation of
 									documentation</strong></span></summary>
 						<ol type="1" start="1">
 							<li><span><strong>Scrum
@@ -414,8 +402,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong>3.- Code development applying
+						<summary style="cursor: pointer; margin-bottom: 2%;"><span><strong>3.- Code development applying
 									knowledge in Django</strong></span></summary>
 						<ol type="1" start="1">
 							<li>Development of functionalities with Django, Similar, search, manage jinja2
@@ -428,7 +415,7 @@
 							<li>Registration of sellers and publication of products by users</li>
 						</ol>
 						<ol type="1" start="4">
-							<li>Slug URL for products</li>
+							<li>Sulg URL for products</li>
 						</ol>
 						<ol type="1" start="5">
 							<li>Micro-services backend, Products, users.</li>
@@ -437,8 +424,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong>4.- Frontend
+						<summary style="cursor: pointer; margin-bottom: 2%;"><span><strong>4.- Frontend
 									design</strong></span></summary>
 						<p>Elegant design with tailwind CSS
 							Framework in Django templates 2.</p>
@@ -446,8 +432,7 @@
 				</li>
 				<li style="list-style-type: none;">
 					<details>
-						<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong>5.- Testing and
+						<summary style="cursor: pointer; margin-bottom: 2%;"><span><strong>5.- Testing and
 									deployment</strong></span></summary>
 						<ol type="1" start="1">
 							<li>testing with Django, GitHub Actions</li>
@@ -465,71 +450,65 @@
 			</ul>
 		</div>
 	</details>
-</details>
+</h3>
 <br>
 <hr>
 <br>
 <!-- PROJECTS -->
-<details>
-	<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong style="    font-size: 3rem;
-    line-height: 2.8rem;
-    font-weight: bold;">💼 Projects</strong></span></summary>
-	<div style="  display: flex;
-    justify-content: space-around;">
-		<div>
+	<h1 style="cursor: pointer; margin-bottom: 2%;"><span><strong>💼 Projects</strong></span></h1>
+	<h3>	
+	<div style="display: flex; justify-content: space-around;">
+		<ul>	
 			<h3 style="text-underline-offset: 2;text-underline-offset: 2;font-weight: bold;">Full Stack projects </h3>
-			<figure><a style=" color: #486fdb;
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Wordbook-Web-Application-Learn-Language-Django-PostgresSQL-DRF-SJWT-React-Next-js-Red-c726fe8db73845d598e772aa49a59909"><span>📘</span>Wordbook
 					Web Application Learn Language [ Django - PostgresSQL - DRF -
-					SJWT || React - Next.js - Redux - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					SJWT || React - Next.js - Redux - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Traker-Interview-Django-JavaScript-TailwindCSS-d0fe74c3c6e24d6ea6b0e1571988a100"><span>📋</span>Traker
-					Interview [ Django - JavaScript - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					Interview [ Django - JavaScript - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Twitter-Clone-Django-TailwindCSS-39a5c1ab24754682ab05283191319094"><span>🐦</span>Twitter
-					Clone [ Django - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					Clone [ Django - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Marketplace-AisModa-Django-TailwindCSS-17935a6783f14c30be846be428a83850"><span>👜</span>Marketplace
-					AisModa [ Django - TailwindCSS ]</a></figure>
-		</div>
-		<div>
+					AisModa [ Django - TailwindCSS ]</a></li>
+		</ul>
+		<ul>
 			<h3 style="font-weight: bold;text-underline-offset: 2;font-weight: bold;">Frontend web Layout </h3>
-			<figure><a style=" color: #486fdb;
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Personal-Portfolio-React-Next-TailwindCSS-45a7a1800e394c318c94dfc65ec84cd1"><span>🗃️</span>Personal
-					Portfolio [ React - Next - TailwindCSS ]</a></figure>
-			<figure><a style=" color: #486fdb;
+					Portfolio [ React - Next - TailwindCSS ]</a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Marketplace-React-TailwindCSS-cab335afafd84c5f8d17bc4489a11c45"><span>👜</span>Marketplace
-					[ React - TailwindCSS ] </a></figure>
-			<figure><a style=" color: #486fdb;
+					[ React - TailwindCSS ] </a></li>
+			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
 					href="https://angelriera.notion.site/Landing-page-App-React-TailwindCSS-ad4a0fbca60a40f5b50a91161239ae04"><span>📱</span>Landing
-					page App [ React - TailwindCSS ]</a></figure>
-		</div>
+					page App [ React - TailwindCSS ]</a></li>
+		</ul>
 	</div>
-</details>
+	</h3>
+</h1>
 <br>
 <hr>
 <br>
 <!-- EDUCATION -->
-<details>
-	<summary style=" cursor: pointer;
-    margin-bottom: 2%;"><span><strong style="    font-size: 3rem;
-    line-height: 2.8rem;
-    font-weight: bold;">📚 Education</strong></span></summary>
+	<h1 style=" cursor: pointer;
+    margin-bottom: 2%;"><span><strong >📚 Education</strong></span></h1>
 	<ul>
 		<li style="list-style-type: none;">
 			<details>			
@@ -538,14 +517,14 @@
     font-weight: bold;">Self-taught web development student <span>Dec/16/2020 - Present</span>
 					<strong><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank"href="https://github.com/RagAndRoll">https://github.com/RagAndRoll</a></strong>
+    font-weight: bold;" target="_blank"href="https://github.com/Angel7dev">https://github.com/Angel7dev</a></strong>
 				</summary>
 				<div>
 					<div>
 						<p><span><strong>Portfolio:</strong></span> <a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
-								href="https://ragandroll.github.io/RagAndRoll/"><strong>https://ragandroll.github.io/RagAndRoll/</strong></a>
+								href="https://Angel7dev.github.io/Angel7dev/"><strong>https://Angel7dev.github.io/Angel7dev/</strong></a>
 						</p>
 						<p>As a person who is passionate about learning,
 							my thirst for learning does not fit the conventional methods, I consider myself
@@ -641,46 +620,42 @@
 			</details>
 		</li>
 	</ul>
-</details>
 <br>
 <hr>
 <br>
 <!-- BLOG -->
-<details>
-	<summary style="    cursor: pointer;
-    margin-bottom: 2%;"><span><strong style="    font-size: 3rem;
-    line-height: 2.8rem;
-    font-weight: bold;">📜 Blog </strong></span><span><strong><a style=" color: #486fdb;
+	<h1 style="cursor: pointer;
+    margin-bottom: 2%;"><span><strong >📜 Blog </strong></span><span><strong><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
-					href="https://dev.to/ragandroll">https://dev.to/ragandroll</a></strong></span>
-	</summary>
+					href="https://dev.to/Angel7dev">https://dev.to/Angel7dev</a></strong></span>
+	</h1>
 	<div>
 		<ol type="1" start="1">
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href="https://dev.to/ragandroll/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
+    font-weight: bold;" target="_blank" href="https://dev.to/Angel7dev/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
 						Docker como entorno de desarrollo con Django y Postgesql</strong></a></li>
 		</ol>
 		<ol type="1" start="2">
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href="https://dev.to/ragandroll/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
+    font-weight: bold;" target="_blank" href="https://dev.to/Angel7dev/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
 						Carrusel React personalizable con tailwind CSS</strong></a></li>
 		</ol>
 	</div>
-</details>
 <!-- CV LINK -->
+</h1>
 <br>
 <hr>
 <br>
 </div>
 <p align="center"> 
-<img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=ragandroll&layout=compact&langs_count=7&theme=chartreuse-dark"/>
+<img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=Angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </p>
 <p align="center"> 
-<img  src="https://github-readme-stats.vercel.app/api?username=ragandroll&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
+<img  src="https://github-readme-stats.vercel.app/api?username=Angel7dev&show_icons=true&theme=chartreuse-dark&inculde_all_commits=true&count_private=true"/>
 </p>
 <p align="center" >
-<img  src="https://github-readme-streak-stats.herokuapp.com/?user=ragandroll&layout=compact&langs_count=7&theme=chartreuse-dark" alt="ragandroll" />
+<img  src="https://github-readme-streak-stats.herokuapp.com/?user=Angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark" alt="Angel7dev" />
 </p>

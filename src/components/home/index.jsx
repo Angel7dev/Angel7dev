@@ -14,13 +14,13 @@ const Home = () => {
     <Layout className='h-full'>
       <Header />
 
-      <SkillsExp/>
+      {/* <SkillsExp/>
 
       <Projects />
 
       <LayoutProjects/>
 
-      <Contact />
+      <Contact /> */}
 
     </Layout>
   )
