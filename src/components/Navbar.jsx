@@ -12,19 +12,24 @@ const Navbar = () => {
     const links = [
         { name: 'Home', link: "/" },
         { name: 'Contact', link: "/contact/" },
+        { name: 'services', link: "/services/" },
         // { name: 'about', link: "#" },
-        // { name: 'services', link: "#" },
     ]
     return (
-        <nav className='bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600'>
+        <nav className='bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600 md:py-2 md:px-8'>
             <div className='pr-5 md:border-r shadow shadow-white md:shadow-none'>
-                <a className='mx-5 ' href='#about'> Angel7dev</a>
+                <Link href='/'>
+                    <a className='mx-5' > Ange
+                        <span className='italic'>L
+                            <strong className='font-extrabold -ml-[0.2rem] -mr-[0.0rem]'>
+                                7-
+                            </strong>Dv</span>
+                    </a>
+                </Link>
             </div>
 
-
-
             {/* items menu */}
-            <div id='navmenu' className='flex justify-center text-md px-5 space-x-3'>
+            <div id='navmenu' className='flex justify-center text-md px-5 space-x-6'>
                 {links.map((e, i) => (
                     <Link key={i} href={e.link} className="">
                         <a className='group'>
@@ -42,7 +47,7 @@ const Navbar = () => {
             {/* items menu */}
 
             {/* hidden buttom */}
-{/* 
+            {/* 
             <div className='hidden' >
              
                 <button onClick={() => display()} >
