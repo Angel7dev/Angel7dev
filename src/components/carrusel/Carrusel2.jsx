@@ -1,7 +1,6 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Carrusel2({ images }) {
-
     const sliderBar = useRef()
     const handlers = (bool) => {
         const slider = sliderBar.current
@@ -13,23 +12,52 @@ export default function Carrusel2({ images }) {
         if (lenSlider > 0) {
             if (bool === true) { //next
                 slider.style.transition = `1000ms ease-out all`
-                slider.style.transform = `translateX(-${widthSlider}px)`            
-                setTimeout(()=>{
+                slider.style.transform = `translateX(-${widthSlider}px)`
+                setTimeout(() => {
                     slider.style.transition = `none`
                     slider.appendChild(first)
-                    slider.style.transform = `translateX(0)`       
-                },1000)    
+                    slider.style.transform = `translateX(0)`
+                }, 1000)
             } else if (bool === false) { //prev
                 slider.insertBefore(last, slider.firstChild)
                 slider.style.transition = `none`
                 slider.style.transform = `translateX(-${widthSlider}px)`
-                setTimeout(()=>{
+                setTimeout(() => {
                     slider.style.transition = `1000ms ease-out all`
                     slider.style.transform = `translateX(0)`
-                },1)                
+                }, 1)
             }
         }
     }
+    
+    
+    
+    // Auto play
+
+    const [autoplay, setAutoplay] = useState(true)
+
+    useEffect(() => {
+        if(autoplay){
+            const interval = setInterval(() => {
+                handlers(true)
+            }, 5000);
+            // Al hacer mousover resetea el interval
+            sliderBar.current.addEventListener('mousenter', ()=>{ 
+                clearInterval(interval)
+             })
+            return  ()=>clearInterval(interval) // se asegura que el intervalo no aumente su repeticion
+        }
+    
+
+        
+
+       
+
+
+    }, [])
+
+
+
 
     return (
 
@@ -43,7 +71,7 @@ export default function Carrusel2({ images }) {
                         min-w-full overflow-hidden z-1 relative
                         transition-all ease-out '>
                         {/* imgen */}
-                        <div className='max-h-[500px] min-w-full flex items-center'>
+                        <div className='max-h-[700px] min-w-full flex items-center'>
                             <img className='w-full h-full z-1' src={e} alt="" />
                         </div>
                         {/* text */}

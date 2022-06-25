@@ -6,7 +6,6 @@ export const Card = ({ description }) => {
 
     const nextCurrent = () => {
         console.log(current, description.length)
-
         const interval = setInterval(() => {
             if (current < description.length) {
                 console.log("here")
@@ -18,12 +17,8 @@ export const Card = ({ description }) => {
                 setCurrent(0)
             }
         }, 1000)
-
         clearInterval(interval)
-
     }
-
-
 
     return (
 
