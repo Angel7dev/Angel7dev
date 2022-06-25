@@ -66,7 +66,7 @@ const Footer = () => {
 
 
     return (
-        <footer className='bg-slate-900  flex flex-col-reverse md:flex-row justify-between md:py-3 md:px-24'>
+        <footer className='border-t border-slate-400 bg-gradient-to-t from-slate-900 to-gray-900  flex flex-col-reverse md:flex-row justify-between md:py-3 md:px-24'>
 
             <a className='w-full py-1 md:py-0 font-bold underline text-sm text-center md:text-left ' href="https://github.com/Angel7dev" target="__blank">
                 ©2022 Angel7dev. All rights reserved.

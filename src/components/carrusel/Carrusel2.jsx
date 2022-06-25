@@ -1,46 +1,34 @@
-import React from 'react'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 export default function Carrusel2({ images }) {
 
-
     const sliderBar = useRef()
-
     const handlers = (bool) => {
         const slider = sliderBar.current
         const lenSlider = slider.children.length
         const widthSlider = slider.children[0].offsetWidth
-
         const first = slider.children[0]
         const last = slider.children[lenSlider - 1]
 
-        console.log(bool)
-        const toTheLast = () => {
-            
-            console.log("to last")
-            slider.style.transition = `none`
-            slider.style.transform = `translateX(0px)`
-            slider.appendChild(first)
-            
-        }
         if (lenSlider > 0) {
-            if (bool == true) { //next
+            if (bool === true) { //next
                 slider.style.transition = `1000ms ease-out all`
-                slider.style.transform = `translateX(-${widthSlider}px)`
-                slider.addEventListener('transitionend', toTheLast)
-            } else {
+                slider.style.transform = `translateX(-${widthSlider}px)`            
+                setTimeout(()=>{
+                    slider.style.transition = `none`
+                    slider.appendChild(first)
+                    slider.style.transform = `translateX(0)`       
+                },1000)    
+            } else if (bool === false) { //prev
                 slider.insertBefore(last, slider.firstChild)
                 slider.style.transition = `none`
                 slider.style.transform = `translateX(-${widthSlider}px)`
-
                 setTimeout(()=>{
                     slider.style.transition = `1000ms ease-out all`
                     slider.style.transform = `translateX(0)`
-                },10)                
+                },1)                
             }
         }
-
-
     }
 
     return (
