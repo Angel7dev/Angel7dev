@@ -30,14 +30,9 @@ const Home = () => {
 
   return (
     <Layout>
-
         <Carrusel2 items={items} />
-
         <Servi/>
-
         <Contact/>
-       
-
     </Layout>
   )
 }

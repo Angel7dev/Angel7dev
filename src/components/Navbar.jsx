@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: 'Home', link: "/" },
         { name: 'Contact', link: "/contact/" },
         { name: 'services', link: "/services/" },
-        // { name: 'about', link: "#" },
+        { name: 'about', link: "/about/" },
     ]
     return (
         <nav className='bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600 md:py-2 md:px-8'>
