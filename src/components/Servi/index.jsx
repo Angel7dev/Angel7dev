@@ -17,7 +17,6 @@ export default function S() {
                 setServices(
                     apiData.success
                 )
-
             } catch (error) {
                 console.log(error)
             }
@@ -27,15 +26,11 @@ export default function S() {
     return (
         <div className="flex flex-col justify-center my-12">
 
-            <h1 className="text-4xl underline-offset-4 font-bold text-center">
+            <h1 className="text-4xl underline-offset-4 font-bold text-center mb-10">
                 Services</h1>
-
-            <div className="grid sm:grid-cols-2 gap-2 md:gap-5 mx-[2%] md:mx-[5%]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-10 mx-[7%]">
                 {services && services.map((e, i) => (
-                    <div key={i}>
-                        {e.name}
-                        <Card description={e.description}/>
-                    </div>
+                        <Card key={i} description={e.description} name={e.name}/>
                 ))}
             </div>
         </div>

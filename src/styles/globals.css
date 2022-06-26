@@ -51,6 +51,10 @@ to {
     @apply animate-bounce delay-300 
 }
 
+.rotation-1{
+    @apply group-hover:scale-110 group-hover:rotate-6 transition ease-out delay-200 duration-500
+}
+
 /* .algo{
     bg-[url("images/gallery/img3.jpg")];
     background-image: url("images/gallery/img3.jpg");

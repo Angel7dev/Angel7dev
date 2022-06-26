@@ -1,4 +1,6 @@
 import Carrusel2 from './carrusel/Carrusel2'
+import Contact from './Contact'
+import Servi from './Servi'
 import Layout from './Layout';
 
 
@@ -8,15 +10,33 @@ import Layout from './Layout';
 
 const Home = () => {
 
-  const images = [
-    'images/gallery/00.jpg',
-    'images/gallery/01.jpg',
-    'images/gallery/02.jpg',
-]
+  const items = [
+    {
+      name: 'Diseño web',
+      image: 'images/gallery/00.jpg',
+    },
+    {
+      name: 'Desarrollo backend',
+      image: 'images/gallery/01.jpg',
+    },
+    {
+      name: 'Desarrollo frontend',
+      image: 'images/gallery/02.jpg',
+    },
+
+
+
+  ]
 
   return (
-    <Layout className='h-full'>
-      <Carrusel2 images={images} />
+    <Layout>
+
+        <Carrusel2 items={items} />
+
+        <Servi/>
+
+        <Contact/>
+       
 
     </Layout>
   )
