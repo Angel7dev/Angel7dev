@@ -66,7 +66,7 @@ export default function Carrusel2({ items }) {
                         min-w-full overflow-hidden z-1 relative
                         transition-all ease-out '>
                         {/* imgen */}
-                        <div className='max-h-[900px] min-w-full flex items-center'>
+                        <div className='max-h-[600px] min-w-full flex items-center'>
                             <img className='w-full h-full z-1' src={e.image} alt="" />
                         </div>
                         {/* text */}

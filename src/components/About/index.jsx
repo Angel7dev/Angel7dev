@@ -1,6 +1,7 @@
 import Projects from './Projects'
 import LayoutProjects from './LayoutProjects'
 import Skills from './Skills'
+import Contact from '../Contact'
 
 const Index = () => {
   return (
@@ -13,6 +14,8 @@ const Index = () => {
       <Skills />
       <Projects />
       <LayoutProjects />
+
+      <Contact/>
 
     </div>
   )

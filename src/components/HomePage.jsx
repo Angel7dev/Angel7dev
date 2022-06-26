@@ -1,6 +1,6 @@
 import Carrusel2 from './carrusel/Carrusel2'
 import Contact from './Contact'
-import Servi from './Servi'
+import Servic from './Servic'
 import Layout from './Layout';
 
 
@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <Layout>
         <Carrusel2 items={items} />
-        <Servi/>
+        <Servic/>
         <Contact/>
     </Layout>
   )

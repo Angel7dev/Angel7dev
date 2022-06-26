@@ -3,6 +3,7 @@
 
 
 export default function handler(req, res) {
+  console.log("hello")
   res.status(200).json({
     success:
       [
@@ -102,7 +103,7 @@ export default function handler(req, res) {
           "color": "7c3aed",
           "T-color": "violet-600",
           "description": "Layout one pages | create components |  flex, grid, colors",
-        },
+        }
 
       ]
 

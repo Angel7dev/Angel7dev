@@ -1,10 +1,10 @@
 import Layout from "../components/Layout"
-import Servi from "../components/Servi"
+import Servic from "../components/Servic"
 
 export default function S() {
     return (
         <Layout>
-          <Servi/>
+          <Servic/>
         </Layout>
     )
 }

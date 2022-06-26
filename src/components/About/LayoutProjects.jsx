@@ -1,11 +1,26 @@
 import Image from "next/image";
-import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 
 const LayoutProjects = () => {
 
-    const images = [...Array(5).keys()];
+    // const images = [...Array(5).keys()];
 
-    const layout = useSelector(e => e.portfolio.Layout_projects)
+    const [layout, setLayout] = useState()
+    useEffect(() => {
+        const fetchero = async () => {
+            const resp = await fetch(`/api/localdata/LayoutProjects/`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            const apiData = await resp.json()
+            setLayout(apiData.success
+            )
+        }
+        fetchero()
+    }, [])
+
     return (
         <div className="mx-[4rem] my-[10rem]">
             <div className="border-b mx-[5%] mb-16">
@@ -15,9 +30,8 @@ const LayoutProjects = () => {
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2'>
-                {layout.map((e, i) => (
+                {layout && layout.map((e, i) => (
                     <div key={i} className='border border-black group relative w-auto flex h-full items-center justify-center flex-col mx-auto rounded-3xl'>
-
                         <Image width={500} height={250} src={e.image} alt={`images${i}`} className="" />
                         <div className='bg-gray-800 bg-opacity-10 hover:bg-opacity-70 absolute w-full h-full p-6'>
                             <div className='opacity-0 hover:opacity-100 hover:brightness-100 flex h-full items-center justify-center '>
