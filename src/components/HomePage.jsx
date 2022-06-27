@@ -24,8 +24,6 @@ const Home = () => {
       image: 'images/gallery/02.jpg',
     },
 
-
-
   ]
 
   return (

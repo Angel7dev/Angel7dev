@@ -38,7 +38,7 @@ const Contact = () => {
                     </div>
                         <div className='flex justify-center items-center'>
                             <button type="submit"
-                            className='-mb-[7rem] px-10 py-3 font-bold 
+                            className='-mb-[7rem] px-10 py-3 font-bold transition-color
                             shadow-md rounded-lg shadow-indigo-900
                             bg-gradient-to-r from-blue-700 to-indigo-900
                             hover:bg-gradient-to-l transition-color ease-out duration-300

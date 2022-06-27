@@ -1,5 +1,5 @@
 <!--
-**Angel7dev/Angel7dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Angel7dv/Angel7dv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -57,7 +57,7 @@ Here are some ideas to get you started:
     justify-content: space-around;
 	list-style-type: none;">
 	<p align="center">
-<a target="blank" href="https://twitter.com/Angel7dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ragnandroll" height="30" width="40" /></a>
+<a target="blank" href="https://twitter.com/Angel7dv" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ragnandroll" height="30" width="40" /></a>
 <a target="blank" href="https://www.linkedin.com/in/angelriera/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/angelriera/" height="30" width="40" /></a>
 </p>
 			<!-- <li><a style=" color: #486fdb;
@@ -68,7 +68,7 @@ Here are some ideas to get you started:
     font-weight: bold;" target="_blank" href=" https://angel-riera.vercel.app/">🔗<br/>Web</a></li>
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href=" https://github.com/Angel7dev">🔗<br/>GitHub</a></li>
+    font-weight: bold;" target="_blank" href=" https://github.com/Angel7dv">🔗<br/>GitHub</a></li>
 			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank" href="https://www.linkedin.com/in/angelriera/">🔗<br/>LinkedIn</a></li>
@@ -517,14 +517,14 @@ Here are some ideas to get you started:
     font-weight: bold;">Self-taught web development student <span>Dec/16/2020 - Present</span>
 					<strong><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank"href="https://github.com/Angel7dev">https://github.com/Angel7dev</a></strong>
+    font-weight: bold;" target="_blank"href="https://github.com/Angel7dv">https://github.com/Angel7dv</a></strong>
 				</summary>
 				<div>
 					<div>
 						<p><span><strong>Portfolio:</strong></span> <a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
-								href="https://Angel7dev.github.io/Angel7dev/"><strong>https://Angel7dev.github.io/Angel7dev/</strong></a>
+								href="https://Angel7dv.github.io/Angel7dv/"><strong>https://Angel7dv.github.io/Angel7dv/</strong></a>
 						</p>
 						<p>As a person who is passionate about learning,
 							my thirst for learning does not fit the conventional methods, I consider myself
@@ -628,19 +628,19 @@ Here are some ideas to get you started:
     margin-bottom: 2%;"><span><strong >📜 Blog </strong></span><span><strong><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
-					href="https://dev.to/Angel7dev">https://dev.to/Angel7dev</a></strong></span>
+					href="https://dev.to/Angel7dv">https://dev.to/Angel7dv</a></strong></span>
 	</h1>
 	<div>
 		<ol type="1" start="1">
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href="https://dev.to/Angel7dev/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
+    font-weight: bold;" target="_blank" href="https://dev.to/Angel7dv/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
 						Docker como entorno de desarrollo con Django y Postgesql</strong></a></li>
 		</ol>
 		<ol type="1" start="2">
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href="https://dev.to/Angel7dev/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
+    font-weight: bold;" target="_blank" href="https://dev.to/Angel7dv/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
 						Carrusel React personalizable con tailwind CSS</strong></a></li>
 		</ol>
 	</div>
@@ -651,11 +651,11 @@ Here are some ideas to get you started:
 <br>
 </div>
 <p align="center"> 
-<img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=Angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark"/>
+<img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=Angel7dv&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </p>
 <p align="center"> 
-<img  src="https://github-readme-stats.vercel.app/api?username=Angel7dev&show_icons=true&theme=chartreuse-dark&inculde_all_commits=true&count_private=true"/>
+<img  src="https://github-readme-stats.vercel.app/api?username=Angel7dv&show_icons=true&theme=chartreuse-dark&inculde_all_commits=true&count_private=true"/>
 </p>
 <p align="center" >
-<img  src="https://github-readme-streak-stats.herokuapp.com/?user=Angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark" alt="Angel7dev" />
+<img  src="https://github-readme-streak-stats.herokuapp.com/?user=Angel7dv&layout=compact&langs_count=7&theme=chartreuse-dark" alt="Angel7dv" />
 </p>
