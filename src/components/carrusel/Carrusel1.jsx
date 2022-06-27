@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 
-const Header = () => {
+const Header = ({images}) => {
 
     //trae imagenes aleatorias
-    const ramdon = () => `https://picsum.photos/id/${Math.floor(Math.random() * 100)}/1000/1000`
-    const images = [ramdon(), ramdon()]
+    //const ramdon = () => `https://picsum.photos/id/${Math.floor(Math.random() * 100)}/1000/1000`
+
+  
+
     const [current, setCurrent] = useState(0)
     console.log(current)
 
@@ -56,10 +58,10 @@ const Header = () => {
 
                 <div className='py-5 h-1/5 flex justify-center items-center space-x-4'>
                     {images.map((e, index) => (
-                    <div 
-                        key={index}
-                        onClick={() => setCurrent(index)}
-                        className="
+                        <div
+                            key={index}
+                            onClick={() => setCurrent(index)}
+                            className="
                             bg-white rounded-full h-2 w-2 underline-offset-4
                             hover:cursor-pointer hover:bg-slate-700"
                         />

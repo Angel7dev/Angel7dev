@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+
 
 
 const Projects = () => {
@@ -10,10 +11,24 @@ const Projects = () => {
     // const integer = (num / 2) % 1 === 0
     // const [first, setfirst] = useState((num / 2) % 1 === 0)
 
-    const projects = useSelector(e => e.portfolio.Projects)
+    const [projects, setProjects] = useState()
+    useEffect(() => {
+        const fetchero = async () => {
+            const resp = await fetch(`/api/localdata/projects/`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            const apiData = await resp.json()
+            setProjects(apiData.success
+            )
+        }
+        fetchero()
+    }, [])
 
     return (
-        <div className="md:m-12" id="projects">
+        <div className="" id="projects">
             <div className="border-b mx-[5%] mb-16">
                 <h3 className="text-center text-[3rem] font-bold mb-6 underline leading-[4rem] mx-4">
                     Projects
@@ -28,13 +43,13 @@ const Projects = () => {
 
                         <div key={index} className={((index / 2) % 1 === 0) === true
                             ?
-                            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-left"
+                            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-center lg:text-left"
                             :
-                            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-right"}
-                        >
+                            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-center lg:text-right"}
+                            >
                             <a href={i.live} rel="noreferrer" target="_blank" className="apsolute w-full lg:w-2/4  flex overflow-hidden ">
                                 <div className="h-full  border-2">
-                                    <Image width={"2000%"} height={"1000%"}  className="relative w-full h-full object-center object-cover shadow " src={i.image}
+                                    <Image width={"2000%"} height={"1000%"} className="relative w-full h-full object-center object-cover shadow " src={i.image}
                                         alt={i.name} />
                                 </div>
                             </a>
