@@ -34,7 +34,7 @@
 			SJWT || React - Next.js - Redux - TailwindCSS ]</a>
 	</figure>
 </div>
-<div style="  display: flex;
+<div style="  display:flex;
     justify-content: space-around;">
 	<!-- CONTACT -->
 	<div align="center">
@@ -54,7 +54,7 @@
     font-weight: bold;" target="_blank" href=" https://angel-riera.vercel.app/">🔗<br/>Web</a></li>
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href=" https://github.com/RagAndRoll">🔗<br/>GitHub</a></li>
+    font-weight: bold;" target="_blank" href=" https://github.com/angel7dev">🔗<br/>GitHub</a></li>
 			<li><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank" href="https://www.linkedin.com/in/angelriera/">🔗<br/>LinkedIn</a></li>
@@ -139,8 +139,7 @@
 						<summary style="    cursor: pointer;
     margin-bottom: 2%;"><strong>HTML5 and CSS3 </strong></summary>
 						<p>forms html methods</p>
-						<p>Css   display: flex;
-    justify-content: space-around; - flex </p>
+						<p>Css - flex </p>
 						<p>SASS </p>
 						<p>Tailwind custom components</p>
 						<p>Bootstrap </p>
@@ -538,14 +537,14 @@
     font-weight: bold;">Self-taught web development student <span>Dec/16/2020 - Present</span>
 					<strong><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank"href="https://github.com/RagAndRoll">https://github.com/RagAndRoll</a></strong>
+    font-weight: bold;" target="_blank"href="https://github.com/angel7dev">https://github.com/angel7dev</a></strong>
 				</summary>
 				<div>
 					<div>
 						<p><span><strong>Portfolio:</strong></span> <a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
-								href="https://ragandroll.github.io/RagAndRoll/"><strong>https://ragandroll.github.io/RagAndRoll/</strong></a>
+								href="https://angel7dev.github.io/angel7dev/"><strong>https://angel7dev.github.io/angel7dev/</strong></a>
 						</p>
 						<p>As a person who is passionate about learning,
 							my thirst for learning does not fit the conventional methods, I consider myself
@@ -653,19 +652,19 @@
     font-weight: bold;">📜 Blog </strong></span><span><strong><a style=" color: #486fdb;
     text-decoration: none;
     font-weight: bold;" target="_blank"
-					href="https://dev.to/ragandroll">https://dev.to/ragandroll</a></strong></span>
+					href="https://dev.to/angel7dev">https://dev.to/angel7dev</a></strong></span>
 	</summary>
 	<div>
 		<ol type="1" start="1">
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href="https://dev.to/ragandroll/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
+    font-weight: bold;" target="_blank" href="https://dev.to/angel7dev/devcontainer-docker-como-entorno-de-desarrollo-con-django-y-postgesql-4a9k"><strong>DevContainer;
 						Docker como entorno de desarrollo con Django y Postgesql</strong></a></li>
 		</ol>
 		<ol type="1" start="2">
 			<li><a style=" color: #486fdb;
     text-decoration: none;
-    font-weight: bold;" target="_blank" href="https://dev.to/ragandroll/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
+    font-weight: bold;" target="_blank" href="https://dev.to/angel7dev/simple-carrusel-react-personalizable-con-tailwind-css-446k"><strong>Simple
 						Carrusel React personalizable con tailwind CSS</strong></a></li>
 		</ol>
 	</div>
@@ -676,11 +675,11 @@
 <br>
 </div>
 <p align="center"> 
-<img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=ragandroll&layout=compact&langs_count=7&theme=chartreuse-dark"/>
+<img   src="https://github-readme-stats.vercel.app/api/top-langs/?username=angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </p>
 <p align="center"> 
-<img  src="https://github-readme-stats.vercel.app/api?username=ragandroll&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
+<img  src="https://github-readme-stats.vercel.app/api?username=angel7dev&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
 </p>
 <p align="center" >
-<img  src="https://github-readme-streak-stats.herokuapp.com/?user=ragandroll&layout=compact&langs_count=7&theme=chartreuse-dark" alt="ragandroll" />
+<img  src="https://github-readme-streak-stats.herokuapp.com/?user=angel7dev&layout=compact&langs_count=7&theme=chartreuse-dark" alt="angel7dev" />
 </p>
