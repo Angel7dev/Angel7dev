@@ -22,7 +22,7 @@ const LayoutProjects = () => {
     }, [])
 
     return (
-        <div className="mx-[4rem] my-[10rem]">
+        <div className="md:mx-[4rem] my-[4rem]">
             <div className="border-b mx-[5%] mb-16">
                 <h3 className="text-center text-[3rem] font-bold mb-6 underline leading-[4rem] mx-4">
                     Layout Projects
