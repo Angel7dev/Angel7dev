@@ -31,9 +31,9 @@ const Me = () => {
 
     return (
         <div className='mb-24 mt-12 md:mt-24'>
-            <p className='text-center mx-[10%] md:mx-[25%]' >
+            <h3 className='h3 text-center mx-[10%] md:mx-[25%]' >
                 I am <span className='underline'>Angel Riera</span> a FullStack web developer specialized in Django and React
-            </p>
+            </h3>
 
             <div className='flex justify-center w-full mx-auto px-3 sm:px-24 mt-8 w-[90%]'>
                 <div className="w-full grid gap-5 md:gap-10 md:grid-cols-3">
@@ -43,7 +43,7 @@ const Me = () => {
                                     {e.icon}
                                     
                                 </div>
-                                <span className='my-4 text-slate-300 underline underline-offset-1'>
+                                <span className='my-4 text-slate-300 h-3 underline underline-offset-1'>
                                     {e.title}
                                 </span>
                                 <span className='text-slate-400 '>

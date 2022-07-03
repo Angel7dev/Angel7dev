@@ -28,7 +28,7 @@ body {
     font-size: 120%;
     background: rgb(18,11,54);
     background: linear-gradient(100deg, rgb(11, 23, 54) 0%, rgba(15,23,42,1) 100%);
-    @apply text-gray-200 text-lg md:text-xl;
+    @apply text-gray-200 text-[1rem];
 }
 
 #__next{
@@ -52,7 +52,22 @@ body {
     background-image: url("images/gallery/img3.jpg");
 } */
 
+
+/* 
+Regular 400
+Regular 400 Italic
+Bold 700
+Bold 700 Italic
+
+
+*/
+
 h1, 
-h1{
-    @apply text-[5rem] font-bold
+.h1{
+    @apply text-[2.5rem] font-semibold
+}
+
+h3, 
+.h3{
+    @apply text-[1.5rem] font-semibold
 }

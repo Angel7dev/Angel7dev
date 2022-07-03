@@ -28,12 +28,10 @@ const Projects = () => {
     }, [])
 
     return (
-        <div className="" id="projects">
-            <div className="border-b mx-[5%] mb-16">
-                <h3 className="text-center mb-6 underline leading-[4rem] mx-4">
-                    Projects
-                </h3>
-            </div>
+        <div className="">
+            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 mb-16">
+                Projects
+            </h1>
 
             <div className="w-full mb-16">
 
@@ -43,10 +41,10 @@ const Projects = () => {
 
                         <div key={index} className={((index / 2) % 1 === 0) === true
                             ?
-                            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-center lg:text-left"
+                            "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center md:px-8 text-center lg:text-left"
                             :
-                            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center shadow shadow-gray-50 py-12 md:px-8 text-center lg:text-right"}
-                            >
+                            "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center md:px-8 text-center lg:text-right"}
+                        >
                             <a href={i.live} rel="noreferrer" target="_blank" className="apsolute w-full lg:w-2/4  flex overflow-hidden ">
                                 <div className="h-full  border-2">
                                     <Image width={"2000%"} height={"1000%"} className="relative w-full h-full object-center object-cover shadow " src={i.image}
