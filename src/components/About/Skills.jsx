@@ -36,7 +36,7 @@ const SkillsExp = () => {
         <div id='#skills' className="mb-12 mx-auto lg:m-24 text-center">
             <div className='mb-24'>
                 <div className="border-b mx-[5%] mb-16">
-                    <h3 className="text-center text-[3rem] font-bold mb-6 underline leading-[4rem] mx-4">
+                    <h3 className="text-center mb-6 underline mx-4">
                         Technical skills
                     </h3>
                 </div>

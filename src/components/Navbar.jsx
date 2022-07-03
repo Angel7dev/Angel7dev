@@ -17,19 +17,18 @@ const Navbar = () => {
     ]
     return (
         <nav className='bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600 md:py-2 md:px-8'>
-            <div className='pr-5 md:border-r shadow shadow-white md:shadow-none'>
+            <div className='pr-5 md:border-r shadow shadow-white md:shadow-none text-center'>
                 <Link href='/'>
-                    <a className='mx-5' > Ange
-                        <span className='italic'>L
-                            <strong className='font-extrabold -ml-[0.2rem] -mr-[0.0rem]'>
-                                7-
-                            </strong>Dv</span>
+                    <a className='mx-5' > 
+                            <strong className='italic -ml-[0.2rem] -mr-[0.0rem]'>
+                              Angel Riera
+                            </strong>
                     </a>
                 </Link>
             </div>
 
             {/* items menu */}
-            <div id='navmenu' className='flex justify-center text-md px-5 space-x-6'>
+            <div id='navmenu' className='flex justify-center px-5 space-x-2 sm:space-x-6'>
                 {links.map((e, i) => (
                     <Link key={i} href={e.link} className="">
                         <a className='group'>
@@ -40,8 +39,6 @@ const Navbar = () => {
                         </a>
                     </Link>
                 ))}
-
-
 
             </div>
             {/* items menu */}

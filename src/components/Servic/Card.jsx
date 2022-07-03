@@ -38,7 +38,7 @@ export const Card = ({ description, name }) => {
             <div className='bg-black bg-opacity-40 text-white  absolute top-0 bottom-0 right-0 left-0'>
                 <div className='flex justify-center items-center h-full'>
                     <Link href="/contact">
-                            <a className='hover:p-6 font-bold text-xl border border-white p-5 rounded-md'>
+                            <a className='hover:p-6 border border-white p-5 rounded-md'>
                                 {name}
                             </a>
                     </Link>

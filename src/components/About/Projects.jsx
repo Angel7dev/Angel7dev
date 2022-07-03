@@ -30,7 +30,7 @@ const Projects = () => {
     return (
         <div className="" id="projects">
             <div className="border-b mx-[5%] mb-16">
-                <h3 className="text-center text-[3rem] font-bold mb-6 underline leading-[4rem] mx-4">
+                <h3 className="text-center mb-6 underline leading-[4rem] mx-4">
                     Projects
                 </h3>
             </div>
@@ -55,9 +55,9 @@ const Projects = () => {
                             </a>
                             <div className='w-full lg:w-1/3 flex flex-col justify-center space-y-6 '>
                                 <div className="mx-4">
-                                    <h3 className="text-xl font-bold text-gray-100 underline-offset-2 underline">
+                                    <h3 className="text-gray-100 underline-offset-2 underline">
 
-                                        <span aria-hidden="true" className="text-3xl inset-0 text-center">
+                                        <span aria-hidden="true" className="inset-0 text-center">
                                             {i.name}
                                         </span>
 
@@ -83,14 +83,14 @@ const Projects = () => {
                                 <div className="flex justify-center xl:justify-between ">
                                     <div className="flex space-x-2 mx-4">
 
-                                        <p className="text-sm font-medium text-gray-200 ">init date: </p>
-                                        <p className="text-sm text-gray-50"> {i.date}</p>
+                                        <p className="text-gray-200 ">init date: </p>
+                                        <p className="text-gray-50"> {i.date}</p>
                                     </div>
 
                                     <div className="flex justify-between ">
 
                                         {i.gitHub &&
-                                            <a className="px-2 py-1 mx-1 bg-gray-900 text-gray-200 border text-xs rounded hover:bg-gray-800"
+                                            <a className="px-2 py-1 mx-1 bg-gray-900 text-gray-200 border rounded hover:bg-gray-800"
                                                 href={i.gitHub} target="__blank" >GitHub</a>
                                         }
 

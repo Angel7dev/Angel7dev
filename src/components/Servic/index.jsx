@@ -26,7 +26,7 @@ export default function S() {
     return (
         <div className="flex flex-col justify-center my-12">
 
-            <h1 className="text-4xl underline-offset-4 font-bold text-center mb-10">
+            <h1 className="underline-offset-4 text-center mb-10">
                 Services</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-10 mx-[7%]">
                 {services && services.map((e, i) => (

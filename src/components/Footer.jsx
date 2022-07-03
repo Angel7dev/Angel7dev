@@ -43,7 +43,7 @@ const Footer = () => {
 
     return (
         <footer className='border-t border-slate-400 bg-gradient-to-t from-slate-900 to-gray-900  flex flex-col-reverse md:flex-row justify-between md:py-3 md:px-24'>
-            <a className='w-full md:flex py-1 md:py-0 font-bold underline text-sm text-center md:text-left ' href="https://github.com/Angel7dv" target="__blank">
+            <a className='w-full md:flex py-1 md:py-0 underline text-center md:text-left ' href="https://github.com/Angel7dv" target="__blank">
                 ©2022 Angel7dev. All rights reserved.
             </a>
             <div className='flex justify-center items-center py-1 md:py-0 md:justify-end shadow md:shadow-none shadow-white md:border-l md:mx-3 '>
