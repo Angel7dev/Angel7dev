@@ -47,8 +47,6 @@ export default function Carrusel2({ items }) {
              })
             return  ()=>clearInterval(interval) // se asegura que el intervalo no aumente su repeticion
         }
-
-
     }, [])
 
 

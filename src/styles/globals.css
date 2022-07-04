@@ -38,6 +38,13 @@ body {
     justify-content: space-between;
 }
 
+.logo-text {
+    font-style: oblique;
+    font-weight: 600;
+    color: rgb(214, 214, 214);
+    text-shadow: 0px 0px 2px #757474;
+}
+
 
 .animation{
     @apply animate-bounce delay-300 

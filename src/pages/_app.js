@@ -1,14 +1,22 @@
 import '../styles/globals.css'
-import { Provider } from 'react-redux'
-import { useStore } from '../redux/store'
+
 
 
 function MyApp({ Component, pageProps }) {
-  const store = useStore(pageProps.initialReduxState)
+
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>)
+    <Component {...pageProps} />
+  )
 }
+
+
+export async function getInitialProps({ locale }) {
+  console.log("hola mundo locale")
+  console.log(locale);
+  return {
+    props: { }, // will be passed to the page component as props
+  }
+}
+
 
 export default MyApp

@@ -1,10 +1,10 @@
 import HomePage from '../components/HomePage'
 
-export default function I() {
-  return <HomePage/>
+const I = () => {
+
+  return <HomePage />
 }
 
 
-
-
+export default I
 

@@ -1,37 +1,36 @@
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router'
 
 const LayoutProjects = () => {
 
-    // const images = [...Array(5).keys()];
-
+    const route = useRouter()
     const [layout, setLayout] = useState()
     useEffect(() => {
         const fetchero = async () => {
-            const resp = await fetch(`/api/localdata/LayoutProjects/`, {
+            const resp = await fetch(`/api/${route.locale}/about/layout/`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
             const apiData = await resp.json()
-            setLayout(apiData.success
-            )
+            setLayout(apiData)
         }
         fetchero()
-    }, [])
+    }, [route])
 
-    return (
+    console.log(layout)
+
+    return (layout &&
         <div className="">
-                <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 mb-16">
-                    Layout Projects
-                </h1>
-
+            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
+                Layout Projects
+            </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mx-[5%] h-[25rem]'>
-                {layout && layout.map((e, i) => (
+                {layout && layout.obj.map((e, i) => (
                     <div key={i} className='relative group overflow-hidden'  >
                         <div style={{ backgroundImage: `url("${e.image}")` }}
-                            className="rotation-1 h-full h-full  w-auto min-w-full
+                            className="rotation-1 h-full w-auto min-w-full
                                     bg-cover bg-center bg-no-repeat
                                     static "/>
                         {/* <div className='flex justify-center items-center w-full h-full'>
@@ -43,7 +42,13 @@ const LayoutProjects = () => {
                                 href={e.gitHub} target="__blank" >GitHub</a>
 
                             <a className="px-6 py-2 bg-gray-300 text-gray-900 rounded group-hover:bg-gray-400 border border-black"
-                                href={e.live} target="__blank">Live</a>
+                                href={e.live} target="__blank">
+                                {route.locale == 'en' ?
+                                    "Live"
+                                    :
+                                    "ver"
+                                }
+                            </a>
                         </div>
                     </div>
 

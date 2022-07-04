@@ -1,30 +1,27 @@
 import { useRef, useEffect, useState } from 'react'
 import Image from 'next/image';
+import { useRouter } from 'next/router'
 
 const SkillsExp = () => {
     const slider = useRef()
+    const route = useRouter()
+    
     const [skills, setSkills] = useState()
-
-
-
-
-
-
     useEffect(() => {
-        const fetchero = async () => {
-            const resp = await fetch(`/api/localdata/skills/`, {
+        const fetchData  = async () => {
+            const resp = await fetch(`/api/${route.locale}/about/skills/`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
             const apiData = await resp.json()
-            setSkills(apiData.success
-            )
-        }
-        fetchero()
+            setSkills(apiData)
 
-    }, [])
+        }
+        fetchData()
+
+    }, [route])
 
 
 
@@ -32,10 +29,10 @@ const SkillsExp = () => {
     //     slider.current.scrollLeft += 50
     // }, [50])
 
-    return (
+    return ( skills &&
         <div className="">
-            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 mb-16">
-                Technical skills
+            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
+                {skills.title}
             </h1>
             <div className='my-16 h-48'>
                 <div className='flex items-center justify-center w-full h-full '>
@@ -44,8 +41,8 @@ const SkillsExp = () => {
                     </button>
 
                     <div ref={slider} className='overflow-hidden scroll-smooth h-full flex items-start justify-start'>
-                        {skills && skills.map((e, i) => (
-                            <div className='group'>
+                        {skills && skills.obj.map((e, i) => (
+                            <div key={i} className='group'>
                                 <div key={i} className=' flex flex-col justify-center text-center items-center snapt-start flex-shrink-0 mx-4 '>
                                     <div className='border-2 border-white rounded-full'>
                                         <div style={{ borderColor: `#${e.color}` }}
@@ -55,11 +52,10 @@ const SkillsExp = () => {
                                     </div>
                                     {/* <h5>{e.name}</h5> */}
                                 </div>
-                                <div className='flex justify-center items-end mt-[3rem]
+                                <div className=' justify-center items-end mt-[3rem]
                                 transition ease-out duration-300                        
                                 hidden group-hover:flex right-0 left-0 absolute'>
                                     <div className='flex flex-col items-center'>
-
                                         <h3 className='underline mb-2'>{e.name}</h3>
                                         <p className="text-center">
                                             {e.description}

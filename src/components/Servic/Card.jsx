@@ -25,7 +25,7 @@ export const Card = ({ description, name }) => {
 
         <div className='relative group overflow-hidden my-5' >
             <div style={{ backgroundImage: `url("${description[current].img}")` }}
-                className="rotation-1 min-h-[20rem] w-auto min-w-full
+                className="rotation-1 h-[10rem] sm:h-[15rem]  md:h-[20rem] w-full
             bg-cover bg-center bg-no-repeat
              static "
             />
