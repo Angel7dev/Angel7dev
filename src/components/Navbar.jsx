@@ -51,7 +51,7 @@ const Navbar = () => {
                     </a>
                 </Link>
 
-                <div className='hidden font-bold absolute top-0 md:top-2 right-0 md:mr-6 flex'>
+                <div className='hidden font-bold absolute top-0 md:top-2 right-0 md:mr-6 '>
                     <select onChange={selectLang} className='rounded-full  bg-transparent  focus:outline-none' >
                         <option className='bg-slate-900 text-white ' value="es">es</option>
                         <option className='bg-slate-900 text-white ' value="en">en</option>
