@@ -50,7 +50,7 @@ const Header = ({images}) => {
 
                     <button onClick={() => set_Current(false)} className='bg-slate-700 mx-4'>{"<"}</button>
                     <div className='text-center w-1/2'>
-                        <h1 className='text-7xl'>title</h1>
+                        <h1 className=''>title</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa recusandae quasi tempore iure placeat cupiditate facilis aperiam quae a eligendi, porro doloribus numquam voluptatibus neque enim error non unde?</p>
                     </div>
                     <button onClick={() => set_Current(true)} className='bg-slate-700 mx-4'>{">"}</button>
