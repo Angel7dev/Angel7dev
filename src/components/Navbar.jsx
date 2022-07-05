@@ -1,36 +1,67 @@
-import React from 'react'
-import Image from 'next/image'
+import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import lang from '../lang'
+
 
 const Navbar = () => {
+    const route = useRouter()
+    const [links, setLinks] = useState()
+    async function get_data() {
+        const a = await lang(route.locale, "globals")
+        setLinks(a.default.links)
+    }
+    get_data()
 
-    const display = () => {
-        const navmenu = document.querySelector('#navmenu')
-        navmenu.classList.toggle('hidden')
+
+
+
+    // async function data (){
+    //     const res = await lang(route.locale, "globals")
+    //     return res
+    // }
+    // console.log(data)
+    // language
+
+    const selectLang = (e) => {
+        console.log(e.target.value)
+        route.push(route.pathname, route.pathname, {
+            locale: e.target.value
+        })
     }
 
-    const links = [
-        { name: 'Home', link: "/" },
-        { name: 'Contact', link: "/contact/" },
-        { name: 'services', link: "/services/" },
-        { name: 'about', link: "/about/" },
-    ]
+
+
+
+    // async function  response (){
+    //     const algo = await import(`../lang/${route.locale}/globals.json`)
+    //     console.log(algo.default.links)
+    // } 
+    // response()
+
+
     return (
-        <nav className='bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600 md:py-2 md:px-8'>
-            <div className='pr-5 md:border-r shadow shadow-white md:shadow-none'>
+        <nav className='relative bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600 md:py-2 md:px-8'>
+            <div className='pr-5 md:border-r shadow shadow-white md:shadow-none text-center'>
                 <Link href='/'>
-                    <a className='mx-5' > Ange
-                        <span className='italic'>L
-                            <strong className='font-extrabold -ml-[0.2rem] -mr-[0.0rem]'>
-                                7-
-                            </strong>Dv</span>
+                    <a className='mx-5' >
+                        <strong className='logo-text italic -ml-[0.2rem] -mr-[0.0rem]'>
+                            Angel Riera
+                        </strong>
                     </a>
                 </Link>
+
+                <div className='hidden font-bold absolute top-0 md:top-2 right-0 md:mr-6 '>
+                    <select onChange={selectLang} className='rounded-full  bg-transparent  focus:outline-none' >
+                        <option className='bg-slate-900 text-white ' value="es">es</option>
+                        <option className='bg-slate-900 text-white ' value="en">en</option>
+                    </select>
+                </div>
             </div>
 
             {/* items menu */}
-            <div id='navmenu' className='flex justify-center text-md px-5 space-x-6'>
-                {links.map((e, i) => (
+            <div className='flex justify-center px-5 space-x-2 sm:space-x-6'>
+                {links && links.map((e, i) => (
                     <Link key={i} href={e.link} className="">
                         <a className='group'>
                             {e.name}
@@ -40,8 +71,6 @@ const Navbar = () => {
                         </a>
                     </Link>
                 ))}
-
-
 
             </div>
             {/* items menu */}
@@ -61,5 +90,6 @@ const Navbar = () => {
 
     )
 }
+
 
 export default Navbar

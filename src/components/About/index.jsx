@@ -9,16 +9,11 @@ const Index = () => {
   
   return (
     <div>
-
-      
       <Me/>
-
       <Skills />
       <Projects />
       <LayoutProjects />
-
       <Contact/>
-
     </div>
   )
 }
