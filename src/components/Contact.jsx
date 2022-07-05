@@ -45,7 +45,7 @@ const Contact = () => {
                     <div className="flex flex-col justify-center ">
                         <input className="w-[90%] md:w-2/3 my-2 mx-auto m-[2%] shaodw shadow-md rounded-full px-4 focus:shadow-blue-600 shadow-sky-900 bg-transparent 
                         selection:active:focus:bg-transparent focus:outline-none"
-                            autoComplete='off' aria-autocomplete='off' type="email" name="from_email" required placeholder={data[1]}
+                            autoComplete='off' aria-autocomplete='none' type="email" name="from_email" required placeholder={data[1]}
                         />
                         <input className="w-[90%] md:w-2/3 my-2 mx-auto m-[2%] shaodw shadow-md rounded-full px-4 focus:shadow-blue-600 shadow-sky-900 bg-transparent 
                         selection:active:focus:bg-transparent focus:outline-none"
