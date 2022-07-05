@@ -4,7 +4,8 @@
 
 export default function handler(req, res) {
   res.status(200).json({
-    success:
+    title: "Habilidades Técnicas ",
+    obj:
       [
         {
           "name": "Django",

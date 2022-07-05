@@ -30,8 +30,8 @@ const SkillsExp = () => {
     // }, [50])
 
     return ( skills &&
-        <div className="">
-            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
+        <div className="border-b">
+            <h1 className=" py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
                 {skills.title}
             </h1>
             <div className='my-16 h-48'>
@@ -40,7 +40,9 @@ const SkillsExp = () => {
                         <svg className='w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800' fillRule='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M15 19l-7-7 7-7'></path></svg>
                     </button>
 
-                    <div ref={slider} className='overflow-hidden scroll-smooth h-full flex items-start justify-start'>
+                    <div ref={slider} className='
+                    transition ease-out delay-700 duration-500
+                    overflow-hidden scroll-smooth h-full flex items-start justify-start'>
                         {skills && skills.obj.map((e, i) => (
                             <div key={i} className='group'>
                                 <div key={i} className=' flex flex-col justify-center text-center items-center snapt-start flex-shrink-0 mx-4 '>

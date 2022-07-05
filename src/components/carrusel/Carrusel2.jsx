@@ -71,9 +71,9 @@ export default function Carrusel2({ items }) {
                         <div className='absolute bottom-0 top-0 w-full z-2
                             bg-black text-white bg-opacity-50  
                             flex flex-col justify-center items-center text-center px-[2%]'>
-                            <p className='w-4/6  mb-10'>
+                            <h1 className='w-4/6  mb-10'>
                                 {e.name}
-                            </p>
+                            </h1>
                             <button className='border px-2 rounded-md'>ver mas</button>
                         </div>
                     </div>

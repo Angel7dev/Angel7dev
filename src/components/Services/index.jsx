@@ -30,7 +30,7 @@ export default function S() {
         <div className="flex flex-col justify-center my-12">
 
             <h1 className="underline-offset-4 text-center mb-10">
-                Services</h1>
+                {services.title}</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-10 mx-[7%]">
                 { services.obj.map((e, i) => (
                         <Card key={i} description={e.description} name={e.name}/>

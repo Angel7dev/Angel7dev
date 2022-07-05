@@ -26,9 +26,9 @@ const Me = () => {
     return ( data &&
         <div className='mb-24 mt-12 md:mt-24'>
 
-            <h3 className='h3 text-center mx-[10%] md:mx-[25%]' >
+            <h1 className='text-center mx-[10%] md:mx-[25%]' >
                 {data.me}
-            </h3>
+            </h1>
 
             <div className='flex justify-center  mx-auto px-3 sm:px-24 mt-8 w-[90%]'>
                 <div className="w-full grid gap-5 md:gap-10 md:grid-cols-3">

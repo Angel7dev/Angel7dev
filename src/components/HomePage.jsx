@@ -1,6 +1,6 @@
 import Carrusel2 from './carrusel/Carrusel2'
 import Contact from './Contact'
-import Servic from './Servic'
+import Servic from './Services'
 import Layout from './Layout';
 
 

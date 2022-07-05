@@ -22,8 +22,8 @@ const LayoutProjects = () => {
     console.log(layout)
 
     return (layout &&
-        <div className="">
-            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
+        <div className="border-b pb-5">
+            <h1 className="py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
                 Layout Projects
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mx-[5%] h-[25rem]'>

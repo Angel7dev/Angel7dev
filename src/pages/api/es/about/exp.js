@@ -3,7 +3,8 @@
 
 export default function handler(req, res) {
   res.status(200).json({
-    success: [
+    title: "Experiencia",
+    obj: [
       {
         "id": 1,
         "place": "Hablemos Python",

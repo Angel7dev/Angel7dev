@@ -30,8 +30,8 @@ const Projects = () => {
 
 
     return (data &&
-        <div className="">
-            <h1 className="border-b py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
+        <div className="border-b">
+            <h1 className=" py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
                 {data.title}
             </h1>
 
@@ -42,8 +42,8 @@ const Projects = () => {
                         <div key={i} className={((i / 2) % 1 === 0) === true
                             ? "flex flex-col lg:flex-row md:mx-24 lg:mx-0 justify-around items-center md:px-8 text-center lg:text-left"
                             : "flex flex-col lg:flex-row-reverse md:mx-24 lg:mx-0 justify-around items-center md:px-8 text-center lg:text-right"}
-                            >
-                                
+                        >
+
                             <a href={e.live} rel="noreferrer" target="_blank" className="apsolute w-full lg:w-2/4  flex overflow-hidden ">
                                 <div className="h-full  border-2">
                                     <Image width={"2000%"} height={"1000%"} className="relative w-full h-full object-center object-cover shadow " src={e.image}
@@ -64,25 +64,19 @@ const Projects = () => {
                                 <div className="m-2">
                                     <hr />
                                 </div>
-                                <div className="flex justify-center xl:justify-between ">
-                                    <div className="flex space-x-2 mx-4">
 
-                                        <p className="text-gray-200 ">init date: </p>
-                                        <p className="text-gray-50"> {e.date}</p>
-                                    </div>
 
-                                    <div className="flex justify-between ">
+                                <div className="flex justify-between w-1/2 mx-auto">
 
-                                        {e.gitHub &&
-                                            <a className="px-2 py-1 mx-1 bg-gray-900 text-gray-200 border rounded hover:bg-gray-800"
-                                                href={e.gitHub} target="__blank" >GitHub</a>
-                                        }
+                                    {e.gitHub &&
+                                        <a className="px-2 py-1 mx-1 bg-gray-900 text-gray-200 border rounded hover:bg-gray-800"
+                                            href={e.gitHub} target="__blank" >GitHub</a>
+                                    }
 
-                                        {e.live &&
-                                            <a className="px-2 py-1 mx-1 bg-gray-300 text-gray-900 text-xs rounded hover:bg-gray-400"
-                                                href={e.live} target="__blank">Live</a>
-                                        }
-                                    </div>
+                                    {e.live &&
+                                        <a className="px-2 py-1 mx-1 bg-gray-200 text-gray-900 border rounded hover:bg-gray-400"
+                                            href={e.live} target="__blank">Live</a>
+                                    }
                                 </div>
                             </div>
                         </div>

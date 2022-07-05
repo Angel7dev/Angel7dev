@@ -19,8 +19,8 @@ export default function handler(req, res) {
 
       },
       {
-        title: "Stack tegnologico",
-        sub_title: "Conocimiento en mas de 15 herramientas de desarrollo",
+        title: "Tech stack",
+        sub_title: "Knowledge in more than 15 development tools",
         // description: "",
         icon: "/images/me/03.svg"
 

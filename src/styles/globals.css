@@ -71,6 +71,7 @@ Bold 700 Italic
 
 h1, 
 .h1{
+    line-height: 2.8rem;
     @apply text-[2.5rem] font-semibold
 }
 

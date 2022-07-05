@@ -2,6 +2,8 @@
 
 export default function handler(req, res) {
   res.status(200).json({
+    title : "services",
+
     crr_services: [
       {
         "name": "design web",
