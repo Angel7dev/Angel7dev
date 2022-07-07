@@ -7,18 +7,23 @@ export default function handler(req, res) {
       {
         "name": "Tienda online de moda",
         "live": "https://ragandroll.github.io/aismoda/",
-        "image": "/images/LayoutProjects/Ecommerce/01.png",
-        "gif": "/images/LayoutProjects/Ecommerce/01.gif",
+        "image": "/images/LayoutProjects/aismoda.png",
+       
+        "gif": "https://www.youtube.com/watch?v=KP8cfJHBAlQ",
       },
       {
         "name": "Pagina de aterrizaje para aplicación móvil",
         "live": "https://ragandroll.github.io/sellapp/",
-        "image": "/images/LayoutProjects/LandingPage/01.png",
+        "image": "/images/LayoutProjects/sellapp.png",
+        "gif": "https://www.youtube.com/watch?v=qfT3PDJ6Swg",
+
       },
       {
         "name": "termoindustria",
         "live": "https://angel7dv.github.io/Layout/termoindustria/",
-        "image": "/images/LayoutProjects/LandingPage/01.png",
+        "image": "/images/LayoutProjects/termoindustria.png",
+        "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
+
       }
 
 

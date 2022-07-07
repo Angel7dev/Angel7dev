@@ -37,16 +37,16 @@ const Projects = () => {
 
             <div className="w-full mb-16">
 
-                <div className="flex flex-col md:space-y-24">
+                <div className="flex flex-col space-y-24">
                     {data.obj.map((e, i) => (
                         <div key={i} 
-                        className={`flex flex-col space-y-6 md:space-y-0 md:mx-24 lg:mx-0 justify-around
+                        className={`flex flex-col md:mx-24 lg:mx-0 justify-around
                          items-center md:px-8 text-center 
                          ${((i / 2) % 1 === 0) === true ? "lg:flex-row lg:text-left" :  "lg:flex-row-reverse lg:text-right"}`}
                         >
 
                             <a href={e.live} rel="noreferrer" target="_blank" 
-                            className={`w-full lg:w-2/4  flex overflow-hidden shaodw shadow-md rounded-xl shadow-[#${e.color}]`}>
+                            className={`w-full lg:w-2/4  flex overflow-hidden shaodw shadow-md rounded-xl shadow-indigo-500`}>
                                     <Image width={"2000%"} height={"1000%"} className="relative w-full h-full object-center object-cover" src={e.image}
                                         alt={e.name} />
                             </a>
