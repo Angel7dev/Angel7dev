@@ -6,20 +6,25 @@ export default function handler(req, res) {
     obj: [
       {
         "name": "Tienda online de moda",
-        "date": "2022-02-26",
-        "gitHub": "https://github.com/RagAndRoll/MarketPlace_AisModa",
-        "live": "https://ragandroll.github.io/MarketPlace_AisModa/",
+        "live": "https://ragandroll.github.io/aismoda/",
         "image": "/images/LayoutProjects/Ecommerce/01.png",
+        "gif": "/images/LayoutProjects/Ecommerce/01.gif",
       },
       {
         "name": "Pagina de aterrizaje para aplicación móvil",
-        "date": "2022-05-04",
-        "gitHub": "https://github.com/RagAndRoll/Landing-page-sell-app",
-        "live": "https://ragandroll.github.io/Landing-page-sell-app/",
+        "live": "https://ragandroll.github.io/sellapp/",
+        "image": "/images/LayoutProjects/LandingPage/01.png",
+      },
+      {
+        "name": "termoindustria",
+        "live": "https://angel7dv.github.io/Layout/termoindustria/",
         "image": "/images/LayoutProjects/LandingPage/01.png",
       }
 
 
+
     ]
   })
+
+  
 }

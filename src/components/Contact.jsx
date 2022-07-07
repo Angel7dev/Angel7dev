@@ -39,7 +39,7 @@ const Contact = () => {
 
     return ( data &&
         <div className="flex justify-center">
-            <div className='my-24 mx-[2%] md:mx-[15%] xl:mx-[20%] w-full sm:w-3/4 md:1/2 flex flex-col justify-center border-4 rounded-lg py-5 border-indigo-900'>
+            <div className='my-24 mx-[2%]  lg:mx-[20%] xl:mx-[25%] w-full sm:w-3/4 md:1/2 flex flex-col justify-center border-4 rounded-lg py-5 border-indigo-900'>
                 <h1 className="text-center" >{data[0]}</h1>
                 <form ref={form} onSubmit={sendEmail} className="w-full my-8">
                     <div className="flex flex-col justify-center ">

@@ -1,4 +1,4 @@
-import { useRouter } from "next/router"
+// import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { Card } from "./Card"
 
@@ -6,8 +6,9 @@ export default function S() {
 
     const [services, setServices] = useState()
 
-    const route = useRouter()
     useEffect(() => {
+        const {useRouter}  = import("next/router")
+        const route = useRouter()
         const fetchero = async () => {
             try {
                 const resp = await fetch(`/api/${route.locale}/services/`, {
