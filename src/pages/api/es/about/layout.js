@@ -6,14 +6,13 @@ export default function handler(req, res) {
     obj: [
       {
         "name": "Tienda online de moda",
-        "live": "https://ragandroll.github.io/aismoda/",
-        "image": "/images/LayoutProjects/aismoda.png",
-       
+        "live": "https://ragandroll.github.io/Layout/aismoda/",
+        "image": "/images/LayoutProjects/aismoda.png",     
         "gif": "https://www.youtube.com/watch?v=KP8cfJHBAlQ",
       },
       {
         "name": "Pagina de aterrizaje para aplicación móvil",
-        "live": "https://ragandroll.github.io/sellapp/",
+        "live": "https://ragandroll.github.io/Layout/sellapp/",
         "image": "/images/LayoutProjects/sellapp.png",
         "gif": "https://www.youtube.com/watch?v=qfT3PDJ6Swg",
 
