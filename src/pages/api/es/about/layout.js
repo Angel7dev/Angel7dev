@@ -5,6 +5,13 @@ export default function handler(req, res) {
     title: "Proyectos de maquetación",
     obj: [
       {
+        "name": "Portfolio Art",
+        "live": "https://angel7dv.github.io/Layout/art-portfolio/",
+        "image": "/images/LayoutProjects/portfolio-art.png",
+        "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
+
+      },
+      {
         "name": "Tienda online de moda",
         "live": "https://angel7dv.github.io/Layout/aismoda/",
         "image": "/images/LayoutProjects/aismoda.png",     
@@ -24,7 +31,6 @@ export default function handler(req, res) {
         "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
 
       }
-
     ]
   })
 
