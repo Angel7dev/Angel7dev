@@ -3,7 +3,7 @@
 
 export default function handler(req, res) {
   res.status(200).json({
-    me: "Soy desarrollador web FullStack especializado en Django y React",
+    me: "Desarrollador web FullStack especializado en Django y React",
     feat: [
       {
         title: "Experiencia",
