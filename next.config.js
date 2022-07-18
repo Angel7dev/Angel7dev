@@ -8,7 +8,7 @@ const nextConfig = {
     locales: ['es', 'en'],
     defaultLocale: 'es',
   },
-  basePath: '/rierangel.github.io',
+  basePath: '',
 
 
 }
