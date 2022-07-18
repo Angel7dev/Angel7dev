@@ -7,14 +7,6 @@
         {
             "name": "Contacto",
             "link": "/contact/"
-        },
-        {
-            "name": "Servicios",
-            "link": "/services/"
-        },
-        {
-            "name": "Sobre mi",
-            "link": "/about/"
         }
     ],
     "carrusel-services": [

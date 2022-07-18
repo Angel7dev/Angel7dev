@@ -5,21 +5,34 @@ export default function handler(req, res) {
     title: "Proyectos de maquetación",
     obj: [
       {
+        "name": "Portfolio Art",
+        "live": "https://angel7dv.github.io/Layout/art-portfolio/",
+        "image": "/images/LayoutProjects/portfolio-art.png",
+        "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
+
+      },
+      {
         "name": "Tienda online de moda",
-        "date": "2022-02-26",
-        "gitHub": "https://github.com/RagAndRoll/MarketPlace_AisModa",
-        "live": "https://ragandroll.github.io/MarketPlace_AisModa/",
-        "image": "/images/LayoutProjects/Ecommerce/01.png",
+        "live": "https://angel7dv.github.io/Layout/aismoda/",
+        "image": "/images/LayoutProjects/aismoda.png",     
+        "gif": "https://www.youtube.com/watch?v=KP8cfJHBAlQ",
       },
       {
         "name": "Pagina de aterrizaje para aplicación móvil",
-        "date": "2022-05-04",
-        "gitHub": "https://github.com/RagAndRoll/Landing-page-sell-app",
-        "live": "https://ragandroll.github.io/Landing-page-sell-app/",
-        "image": "/images/LayoutProjects/LandingPage/01.png",
+        "live": "https://angel7dv.github.io/Layout/sellapp/",
+        "image": "/images/LayoutProjects/sellapp.png",
+        "gif": "https://www.youtube.com/watch?v=qfT3PDJ6Swg",
+
+      },
+      {
+        "name": "termoindustria",
+        "live": "https://angel7dv.github.io/Layout/termoindustria/",
+        "image": "/images/LayoutProjects/termoindustria.png",
+        "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
+
       }
-
-
     ]
   })
+
+  
 }

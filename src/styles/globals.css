@@ -30,6 +30,10 @@ body {
     background: linear-gradient(100deg, rgb(11, 23, 54) 0%, rgba(15,23,42,1) 100%);
     @apply text-gray-200 text-[1rem];
 }
+html {
+    scroll-behavior: smooth;
+  }
+
 
 #__next{
     height: 100%;
@@ -79,3 +83,8 @@ h3,
 .h3{
     @apply text-[1.5rem] font-semibold
 }
+
+
+/* e{
+    color: #ac5353;
+}  */
