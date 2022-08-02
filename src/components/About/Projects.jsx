@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -47,7 +46,7 @@ const Projects = () => {
 
                             <a href={e.live} rel="noreferrer" target="_blank" 
                             className={`w-full lg:w-2/4  flex overflow-hidden shaodw shadow-md rounded-xl shadow-indigo-500`}>
-                                    <Image width={"2000%"} height={"1000%"} className="relative w-full h-full object-center object-cover" src={e.image}
+                                    <img width={"2000%"} height={"1000%"} className="relative w-full h-full object-center object-cover" src={e.image}
                                         alt={e.name} />
                             </a>
                             <div className='w-full lg:w-1/3 flex flex-col justify-center space-y-6 '>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 
 const Me = () => {
     const route = useRouter()
@@ -37,7 +36,7 @@ const Me = () => {
                         <div key={i} className='text-center px-2 py-5 rounded-3xl flex flex-col items-center border bg-indigo-800 w-full' >
                             <div className='w-12 h-12  border-2 border-white bg-slate-700 flex justify-center items-center rounded-full'>
 
-                            <Image width={25} height={25} src={e.icon} alt={e.title} />
+                            <img width={25} height={25} src={e.icon} alt={e.title} />
                            
                             {/* {e.icon} */}
 

@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState } from 'react'
-import Image from 'next/image';
 import { useRouter } from 'next/router'
 
 const SkillsExp = () => {
@@ -49,7 +48,7 @@ const SkillsExp = () => {
                                     <div className='border-2 border-white rounded-full'>
                                         <div style={{ borderColor: `#${e.color}` }}
                                             className={`bg-gray-400 p-2 h-24 w-24 rounded-full flex justify-center items-center border-8 `}>
-                                            <Image fill={`#${e.color}`} width={80} height={80} src={`/images/skills/${e.name}.svg`} alt={`images${i}`} className='object-cover object-center w-full' />
+                                            <img fill={`#${e.color}`} width={80} height={80} src={`/images/skills/${e.name}.svg`} alt={`images${i}`} className='object-cover object-center w-full' />
                                         </div>
                                     </div>
                                     {/* <h5>{e.name}</h5> */}
