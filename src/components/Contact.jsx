@@ -24,7 +24,7 @@ const Contact = () => {
     const [data, setData] = useState()
     useEffect(() => {
         const fetchData = async () => {
-            const resp = await fetch(`/api/${route.locale}/global/`, {
+            const resp = await fetch(`/api/es/global/`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

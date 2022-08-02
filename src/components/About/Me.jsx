@@ -7,7 +7,7 @@ const Me = () => {
     const [data, setData] = useState()
     useEffect(() => {
         const fetchData = async () => {
-            const resp = await fetch(`/api/${route.locale}/about`, {
+            const resp = await fetch(`/api/es/about`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

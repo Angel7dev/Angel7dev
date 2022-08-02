@@ -7,7 +7,7 @@ const LayoutProjects = () => {
     const [layout, setLayout] = useState()
     useEffect(() => {
         const fetchero = async () => {
-            const resp = await fetch(`/api/${route.locale}/about/layout/`, {
+            const resp = await fetch(`/api/es/about/layout/`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

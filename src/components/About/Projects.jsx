@@ -15,7 +15,7 @@ const Projects = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const resp = await fetch(`/api/${route.locale}/about/projects/`, {
+            const resp = await fetch(`/api/es/about/projects/`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

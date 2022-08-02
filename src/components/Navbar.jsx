@@ -8,7 +8,7 @@ const Navbar = () => {
     const route = useRouter()
     const [links, setLinks] = useState()
     async function get_data() {
-        const a = await lang(route.locale, "globals")
+        const a = await lang("es", "globals")
         setLinks(a.default.links)
     }
     get_data()

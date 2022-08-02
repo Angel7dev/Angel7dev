@@ -4,10 +4,10 @@ const nextConfig = {
   images: {
     domains: ['raw.githubusercontent.com'],
   },
-  i18n: {
-    locales: ['es', 'en'],
-    defaultLocale: 'es',
-  },
+  // i18n: {
+  //   locales: ['es', 'en'],
+  //   defaultLocale: 'es',
+  // },
   basePath: '',
 
 

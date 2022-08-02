@@ -9,7 +9,7 @@ const SkillsExp = () => {
     const [skills, setSkills] = useState()
     useEffect(() => {
         const fetchData  = async () => {
-            const resp = await fetch(`/api/${route.locale}/about/skills/`, {
+            const resp = await fetch(`/api/es/about/skills/`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
