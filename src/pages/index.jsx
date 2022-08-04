@@ -1,11 +1,10 @@
-import Layout from "@/components/Layout"
-import About from '@/components/About'
+import HomePage from '@/components/HomePage'
 
-const A =()=>{
-    return <Layout>
-       <About/>
-    </Layout>
+const I = () => {
 
+  return <HomePage />
 }
 
-export default A
+
+export default I
+
