@@ -2,7 +2,8 @@ import HomePage from '@/components/HomePage'
 
 const I = () => {
 
-  return <HomePage />
+  return <HomePage/>
+
 }
 
 
