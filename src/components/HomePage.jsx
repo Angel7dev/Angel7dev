@@ -2,6 +2,8 @@ import Carrusel2 from './carrusel/Carrusel2'
 import Contact from './Contact'
 import Servic from './Services'
 import Layout from './Layout';
+import Me from './Home/Me';
+import SkillsExp from './Home/Skills';
 
 
 // import AddExpForm from './onepage/AddExpForm'
@@ -28,7 +30,8 @@ const Home = () => {
   return (
     <Layout>
         <Carrusel2 items={items} />
-        <Servic/>
+        <Me/>
+        <SkillsExp/>
         <Contact/>
     </Layout>
   )
