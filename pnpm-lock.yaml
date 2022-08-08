@@ -5,6 +5,7 @@ specifiers:
   autoprefixer: ^10.4.7
   eslint: 8.14.0
   eslint-config-next: 12.1.6
+  gsap: ^3.10.4
   next: 12.1.6
   postcss: ^8.4.13
   react: 18.1.0
@@ -13,6 +14,7 @@ specifiers:
 
 dependencies:
   '@emailjs/browser': 3.6.2
+  gsap: 3.10.4
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -1122,6 +1124,10 @@ packages:
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
+
+  /gsap/3.10.4:
+    resolution: {integrity: sha512-6QatdkKxXCMfvCW4rM++0RqyLQAzFX5nwl3yHS0XPgkZBkiSEY3VZVbMltrdtsbER/xZonLtyHt684wRp4erlQ==}
+    dev: false
 
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}

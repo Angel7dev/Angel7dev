@@ -1,28 +1,31 @@
-import { useEffect, useState } from "react"
-import { useRouter } from 'next/router'
+
 
 const Me = () => {
-    const route = useRouter()
-    const [data, setData] = useState()
-    useEffect(() => {
-        const fetchData = async () => {
-            const resp = await fetch(`/api/es/about`, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            const apiData = await resp.json()
-            setData(apiData)
-        }
-        fetchData()
-    }, [route])
 
- 
-    
+    const data = {
+        me: "Desarrollador web FullStack especializado en Django y React",
+        feat: [
+            {
+                title: "Experiencia",
+                sub_title: "mas de 2 años de experiencia practica en el desasarrollo de aplicaciones con Python y JavaScrip",
+                icon: "/img/me/01.svg"
+            },
+            {
+                title: "Stack tegnologico",
+                sub_title: "Conocimiento en mas de 15 herramientas de desarrollo",
+                icon: "/img/me/03.svg"
+            },
+            {
+                title: "Proyectos",
+                sub_title: "+ 40 Proyectos creados en github",
+                icon: "/img/me/02.svg"
+
+            }
+        ]
+    }
 
 
-    return ( data &&
+    return (data &&
         <div className='mb-24 mt-12 md:mt-24'>
 
             <h1 className='text-center mx-[10%] md:mx-[25%]' >
@@ -36,9 +39,9 @@ const Me = () => {
                         <div key={i} className='text-center px-2 py-5 rounded-3xl flex flex-col items-center border bg-indigo-800 w-full' >
                             <div className='w-12 h-12  border-2 border-white bg-slate-700 flex justify-center items-center rounded-full'>
 
-                            <img width={25} height={25} src={e.icon} alt={e.title} />
-                           
-                            {/* {e.icon} */}
+                                <img width={25} height={25} src={e.icon} alt={e.title} />
+
+                                {/* {e.icon} */}
 
                             </div>
                             <div>

@@ -1,44 +1,15 @@
-import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import lang from '../lang'
 
 
 const Navbar = () => {
-    const route = useRouter()
-    const [links, setLinks] = useState()
-    async function get_data() {
-        const a = await lang("es", "globals")
-        setLinks(a.default.links)
-    }
-    get_data()
 
-
-
-
-    // async function data (){
-    //     const res = await lang(route.locale, "globals")
-    //     return res
-    // }
-    // console.log(data)
-    // language
-
-    const selectLang = (e) => {
-        console.log(e.target.value)
-        route.push(route.pathname, route.pathname, {
-            locale: e.target.value
-        })
-    }
-
-
-
-
-    // async function  response (){
-    //     const algo = await import(`../lang/${route.locale}/globals.json`)
-    //     console.log(algo.default.links)
-    // } 
-    // response()
-
+    const links = [
+        {
+            name: "Inicio",
+            link: "/",
+        }
+    ]
+    
 
     return (
         <nav className='relative bg-slate-900 flex flex-col md:flex-row shadow-sm shadow-slate-600 md:py-2 md:px-8'>
@@ -51,12 +22,12 @@ const Navbar = () => {
                     </a>
                 </Link>
 
-                <div className='hidden font-bold absolute top-0 md:top-2 right-0 md:mr-6 '>
+                {/* <div className='hidden font-bold absolute top-0 md:top-2 right-0 md:mr-6 '>
                     <select onChange={selectLang} className='rounded-full  bg-transparent  focus:outline-none' >
                         <option className='bg-slate-900 text-white ' value="es">es</option>
                         <option className='bg-slate-900 text-white ' value="en">en</option>
                     </select>
-                </div>
+                </div> */}
             </div>
 
             {/* items menu */}

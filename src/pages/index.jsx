@@ -1,10 +1,12 @@
-import HomePage from '@/components/HomePage'
 
-const I = () => {
+import Home from '@/components/Home'
+import Layout from '@/components/Layout'
 
-  return <HomePage />
+
+export default function index() {
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  )
 }
-
-
-export default I
-

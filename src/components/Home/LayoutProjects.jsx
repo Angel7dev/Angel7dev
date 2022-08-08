@@ -1,33 +1,43 @@
-import { useEffect, useState } from "react";
-import { useRouter } from 'next/router'
 
 const LayoutProjects = () => {
 
-    const route = useRouter()
-    const [layout, setLayout] = useState()
-    useEffect(() => {
-        const fetchero = async () => {
-            const resp = await fetch(`/api/es/about/layout/`, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            const apiData = await resp.json()
-            setLayout(apiData)
+    const data = [
+        {
+          "name": "Portfolio Art",
+          "live": "https://RierAngel.github.io/Layout/art-portfolio/",
+          "image": "/img/LayoutProjects/portfolio-art.png",
+          "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
+  
+        },
+        {
+          "name": "Tienda online de moda",
+          "live": "https://RierAngel.github.io/Layout/aismoda/",
+          "image": "/img/LayoutProjects/aismoda.png",     
+          "gif": "https://www.youtube.com/watch?v=KP8cfJHBAlQ",
+        },
+        {
+          "name": "Pagina de aterrizaje para aplicación móvil",
+          "live": "https://RierAngel.github.io/Layout/sellapp/",
+          "image": "/img/LayoutProjects/sellapp.png",
+          "gif": "https://www.youtube.com/watch?v=qfT3PDJ6Swg",
+  
+        },
+        {
+          "name": "termoindustria",
+          "live": "https://RierAngel.github.io/Layout/termoindustria/",
+          "image": "/img/LayoutProjects/termoindustria.png",
+          "gif": "https://www.youtube.com/watch?v=r9Z_ZLnenTs",
+  
         }
-        fetchero()
-    }, [route])
+      ]
 
-    console.log(layout)
-
-    return (layout &&
+    return (
         <div className="border-b pb-5">
             <h1 className="py-5 text-center mb-6 underline leading-[4rem] mx-4 ">
-                {layout.title}
+            Proyectos de maquetación
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mx-[5%] h-[45rem]'>
-                {layout && layout.obj.map((e, i) => (
+                {data.map((e, i) => (
                     <div key={i} className='relative group overflow-hidden'  >
                         <div style={{ backgroundImage: `url("${e.image}")` }}
                             className="rotation-1 h-full w-auto min-w-full
@@ -50,11 +60,7 @@ const LayoutProjects = () => {
 
                             <a className="px-6 py-2 text-xl bg-gray-300 text-white rounded group-hover:bg-transparent border border-white"
                                 href={e.live} target="__blank">
-                                {route.locale == 'en' ?
-                                    "Live"
-                                    :
-                                    "ver"
-                                }
+                               ver
                             </a>
                         </div>
                     </div>

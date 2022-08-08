@@ -18,23 +18,7 @@ const Contact = () => {
         e.target.reset();
     };
 
-    
-    // translates
-    const route = useRouter()
-    const [data, setData] = useState()
-    useEffect(() => {
-        const fetchData = async () => {
-            const resp = await fetch(`/api/es/global/`, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            const apiData = await resp.json()
-            setData(apiData.contact)
-        }
-        fetchData()
-    }, [route])
+    const data = ["Contacta me ","Email:", "Asunto:", "Mensaje:", "Enviar" ]
 
 
     return ( data &&
